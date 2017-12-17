@@ -5,6 +5,7 @@ variables:
 
 before_script:
   - gem install bundler
+  - bundle install
 
 test:
   stage: test
