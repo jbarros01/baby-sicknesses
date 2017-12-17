@@ -5,6 +5,7 @@ variables:
 
 before_script:
   - bundle install
+  - gem install jekyll
 
 test:
   stage: test
@@ -19,7 +20,6 @@ test:
 pages:
   stage: deploy
   script:
-  - gem install jekyll
   - bundle exec jekyll build -d public
   artifacts:
     paths:
