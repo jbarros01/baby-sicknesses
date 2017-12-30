@@ -1,1 +1,3 @@
-export { default as getBillingDetails } from './billingDetails'
+export { default as getArticlesType } from './get.articlesType'
+export { default as getArticles} from './get.articles'
+export { default as getArticle} from './get.article'

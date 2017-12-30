@@ -1,13 +1,15 @@
 import React from 'react'
 import { Route, IndexRoute } from 'react-router'
 import App from '../containers/App'
-import BillingDetails from '../containers/BillingDetails'
-import { HOME } from '../constants/routes'
+import { ArticlesType, ArticlesList, Article } from '../containers'
+import { HOME, ARTICLES_LIST, ARTICLE } from '../constants/routes'
 
 export default () => (
   <div>
     <Route path={HOME} component={App}>
-      <Route component={BillingDetails} />
+      <IndexRoute component={ArticlesType} />
     </Route>
+    <Route path={ARTICLES_LIST} component={ArticlesList} />
+    <Route path={ARTICLE} component={Article} />
   </div>
 )

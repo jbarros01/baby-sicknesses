@@ -1,9 +1,9 @@
 import React from 'react'
-import BillingDetails from '../../containers/BillingDetails'
+import ArticlesType from '../../containers/ArticlesType'
 
 const App = () => (
   <div>
-    <BillingDetails />
+    <ArticlesType />
   </div>
 )
 

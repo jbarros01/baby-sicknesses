@@ -1,0 +1,90 @@
+{   
+    "baby_sicknesses": [
+    {
+        "_id": "AT1",
+        "article_type": "Raras",
+        "articles": [
+            {   
+                "_id":"AT1A1",
+                "name":"Síndrome de Moebius", 
+                "description":"A Síndrome de Moebius consiste num raro distúrbio neurológico caracterizado por uma paralisia facial, onde ocorre o desenvolvimento anormal dos nervos cranianos, responsáveis pelas expressões e motricidade ocular, resultando assim, pouca expressividade facial e estrabismo convergente, ou seja, há perda de movimentos do rosto.\nEssa paralisia pode ser total (quando a pessoa não consegue realizar nenhum movimento com os músculos da face) ou parcial (quando a pessoa consegue realizar alguns movimentos, porém reduzidos).",
+                "manifestations": [
+                    { "id": "AT1A1M1", "description": "Manifestation 1" },
+                    { "id": "AT1A1M2", "description": "Manifestation 2" }
+                ],
+                "causes":[
+                    { "id": "AT1A1C1", "description": "Cause 1" },
+                    { "id": "AT1A1C2", "description": "Cause 2" }
+                ],
+                "diagnostic":"Diagnostic",
+                "tratament":"Tratament"
+            },
+            { 
+                "_id":"AT1A2",
+                "name":"Progeria", 
+                "description":"A Progeria, também conhecida com síndrome de Hutchinson-Gilford, é uma desordem genética progressiva e extremamente rara que afeta 1 em cada 4 milhões de crianças. A doença caracteriza-se pelo envelhecimento rápido (cerca de 7 vezes mais do que a taxa normal) da criança. A progeria trata-se de uma doença genética, agressivamente progressiva e sem cura.\nEstas crianças não se desenvolvem fisicamente, nem chegam à maturação sexual necessária para a reprodução, sendo que a sua esperança de vida é de 14 anos para as raparigas e 16 anos para os rapazes.",
+                "manifestations": [
+                    { "id": "AT1A2M1", "description": "Manifestation 1" },
+                    { "id": "AT1A2M2", "description": "Manifestation 2" }
+                ],
+                "causes":[
+                    { "id": "AT1A2C1", "description": "Cause 1" },
+                    { "id": "AT1A2C2", "description": "Cause 2" }
+                ],
+                "diagnostic":"Diagnostic",
+                "tratament":"Tratament"
+            }
+        ]
+    }, 
+    {
+        "_id": "AT2",
+        "article_type": "Comuns",
+        "articles": [
+            {   
+                "_id":"AT2A1",
+                "name":"Article 4", 
+                "description":"Description",
+                "manifestations": [
+                    { "id": "AT2A1M1", "description": "Manifestation 1" },
+                    { "id": "AT2A1M2", "description": "Manifestation 2" }
+                ],
+                "causes":[
+                    { "id": "AT2A1C1", "description": "Cause 1" },
+                    { "id": "AT2A1C2", "description": "Cause 2" }
+                ],
+                "diagnostic":"Diagnostic",
+                "tratament":"Tratament"
+            },
+            { 
+                "_id":"AT2A2",
+                "name":"Article 5", 
+                "description":"Description",
+                "manifestations": [
+                    { "id": "AT2A2M1", "description": "Manifestation 1" },
+                    { "id": "AT2A2M2", "description": "Manifestation 2" }
+                ],
+                "causes":[
+                    { "id": "AT2A2C1", "description": "Cause 1" },
+                    { "id": "AT2A2C2", "description": "Cause 2" }
+                ],
+                "diagnostic":"Diagnostic",
+                "tratament":"Tratament"
+            },
+            { 
+                "_id":"AT2A3",
+                "name":"Article 6", 
+                "description":"Description",
+                "manifestations": [
+                    { "id": "AT2A3M1", "description": "Manifestation 1" },
+                    { "id": "AT2A3M2", "description": "Manifestation 2" }
+                ],
+                "causes":[
+                    { "id": "AT2A3C1", "description": "Cause 1" },
+                    { "id": "AT2A3C2", "description": "Cause 2" }
+                ],
+                "diagnostic":"Diagnostic",
+                "tratament":"Tratament"
+            }
+        ] 
+    }]
+}

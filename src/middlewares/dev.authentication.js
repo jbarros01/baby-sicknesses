@@ -7,10 +7,7 @@ const getAccessToken = state => {
 }
 
 export default store => next => action => {
-  if (process.env.RELEASE_STAGE !== 'development') {
-    return next(action)
-  }
-
+  
   const state = store.getState()
   const token = getAccessToken(state)
 

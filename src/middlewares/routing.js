@@ -1,6 +1,6 @@
 import * as types from '../constants/action.types'
 import { routerActions } from 'react-router-redux'
-import { EDIT_BILLING_DETAILS, LIST } from '../constants/routes'
+import { ARTICLES_LIST, ARTICLE } from '../constants/routes'
 
 export default store => next => action => {
   next(action)
@@ -8,12 +8,13 @@ export default store => next => action => {
     case types.GO_BACK:
       store.dispatch(routerActions.goBack())
       break
-    case types.EDIT_BILLING_DETAILS:
-      store.dispatch(routerActions.push(EDIT_BILLING_DETAILS))
+    case types.GET_ARTICLES:
+      store.dispatch(routerActions.push(ARTICLES_LIST))
       break
-    case types.SAVE_TEAM_SUCCESS:
-      store.dispatch(routerActions.push(LIST))
+    case types.GET_ARTICLE:
+      store.dispatch(routerActions.push(ARTICLE))
       break
     default:
+      break
   }
 }

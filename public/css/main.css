@@ -1714,8 +1714,9 @@ input[type="checkbox"].disabled {
   border-radius: 0.25rem; }
   .btn:focus, .btn.focus, .btn:active:focus, .btn:active.focus, .btn.active:focus, .btn.active.focus {
     outline: thin dotted;
-    outline: 5px auto -webkit-focus-ring-color;
-    outline-offset: -2px; }
+    /* outline: 5px auto -webkit-focus-ring-color; */
+    /* outline-offset: -2px; */
+    }
   .btn:focus, .btn:hover {
     text-decoration: none; }
   .btn.focus {

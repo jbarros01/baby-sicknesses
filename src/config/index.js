@@ -1,16 +1,11 @@
 import { syncHistoryWithStore } from 'react-router-redux'
 import {
-  createHistory as createBrowserHistory,
-  createMemoryHistory
+  createHistory as createBrowserHistory
 } from 'history'
 import configureStore from './store'
 
 const createHistory = () => {
-  if (process.env.RELEASE_STAGE === 'development') {
-    return createBrowserHistory()
-  } else {
-    return createMemoryHistory()
-  }
+  return createBrowserHistory()
 }
 
 export default () => {

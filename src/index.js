@@ -8,18 +8,12 @@ import Root from './Root'
 // Restore existing version of lodash
 _.noConflict()
 
-window.DoencasInfantis = window.DoencasInfantis || {}
-
-window.DoencasInfantis = {
-  start: function(rootElement) {
-    startApp(rootElement)
-  },
-  stop: function(rootElement) {
-    ReactDOM.unmountComponentAtNode(rootElement)
-  }
+document.onreadystatechange = () => {
+  startApp()
 }
 
-function startApp(rootElement) {
+function startApp() {
+  const rootElement = document.getElementById('root')
   const { store, history } = configure()
 
   setup(store.dispatch)

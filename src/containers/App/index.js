@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
-import App from '../../components/App'
+import App from '../../pages/App'
 
 export const mapStateToProps = ({ reducer }) => ({})
 

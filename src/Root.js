@@ -8,7 +8,7 @@ class Root extends React.Component {
   render() {
     const { store, history } = this.props
     const routes = createRoutes()
-
+    
     return (
       <Provider store={store}>
         <Router history={history} routes={routes} />

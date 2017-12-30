@@ -11,17 +11,6 @@ const Nav = () => {
               <div className="sidebar-toggle">
                 <i class="material-icons">menu</i>
               </div>
-               <div class="top-bar">
-                <div class="header-search">
-                  <form role="search" method="get" class="search-form" action="https://wp-themes.com/">
-                    <label>
-                      <span class="screen-reader-text">Search for:</span>
-                      <input type="search" class="search-field" placeholder="Search …" value="" name="s" />
-                    </label>
-                    <input type="submit" class="search-submit" value="Search" />
-                  </form>     
-                </div>
-              </div>
             </Navbar.Header>
           </Grid>
         </Navbar>

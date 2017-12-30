@@ -3,4 +3,4 @@ import actionCreator from './action.creator'
 
 export const init = actionCreator(actionTypes.INIT)
 
-export * from './billingDetails'
+export * from './articles'

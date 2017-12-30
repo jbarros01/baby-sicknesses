@@ -14,13 +14,6 @@ function enableHotReload(store, reducers) {
   }
 }
 
-function isDevelopmentMode() {
-  return (
-    process.env.NODE_ENV === 'development' ||
-    process.env.RELEASE_STAGE === 'staging'
-  )
-}
-
 function configureStore(history) {
   const reducers = { routing: routerReducer }
   const sagaMiddleware = createSagaMiddleware()
@@ -32,8 +25,8 @@ function configureStore(history) {
         routerMiddleware(history),
         sagaMiddleware
       ),
-      isDevelopmentMode() && window.__REDUX_DEVTOOLS_EXTENSION__
-        ? window.__REDUX_DEVTOOLS_EXTENSION__({ name: 'Billing' })
+      window.__REDUX_DEVTOOLS_EXTENSION__
+        ? window.__REDUX_DEVTOOLS_EXTENSION__({ name: 'DoencasInfantis' })
         : f => f
     )
   )

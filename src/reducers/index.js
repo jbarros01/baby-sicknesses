@@ -1,5 +1,5 @@
-import billingDetailsReducer from './billingDetails'
+import articlesReducer from './articles'
 
 export default {
-  billingDetails: billingDetailsReducer
+  articles: articlesReducer
 }

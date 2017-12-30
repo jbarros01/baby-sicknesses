@@ -112,15 +112,15 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"] {
 	padding: 15px;
-	border: 0;
+	border-radius: 0!important;
 	color: #fff;
-	background-color: #23b6b6;
+	background-color: #90ccdc;
 	font-weight: 700;
 	cursor: pointer; /* Improves usability and consistency of cursor style between image-type 'input' and others */
 	-webkit-transition: all 0.3s;
 	transition: all 0.3s;
-
 	-webkit-appearance: button; /* Corrects inability to style clickable 'input' types in iOS */
+	width: 100%;
 }
 input[type="submit"] {
 	margin-top: 5px;
@@ -131,8 +131,8 @@ input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
 	color: #fff;
-	background-color: #17191b;
 	text-decoration: none;
+	background-color: rgba(144, 204, 220, 0.5);
 }
 
 button:focus,
@@ -143,9 +143,9 @@ button:active,
 input[type="button"]:active,
 input[type="reset"]:active,
 input[type="submit"]:active {
-	border-color: #aaa #bbb #bbb;
-	-webkit-box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
-	box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
+	/* border-color: #aaa #bbb #bbb; */
+	/* -webkit-box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15); */
+	/* box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15); */
 }
 
 input[type="checkbox"],
@@ -353,10 +353,10 @@ Posts nav
 	left: 0;
 }
 .sidebar-toggle {
-    position: fixed;
+    position: fixed!important;
     z-index: 101;
-    top: 8px;
-    left: 75px;
+    top: 10px!important;
+    left: 30px!important;
     color: #fff;
     text-shadow: none;
     font-size: 28px;
@@ -466,8 +466,13 @@ Posts nav
 .hentry {
 	margin: 0;
 	padding: 60px;
-	background-color: #fff;
 	display: inline-block;
+	background-color: transparent;
+	box-shadow: 0px 5px 10px 5px #f3f3f3;
+}
+
+.article-post {
+	min-width: 100%;
 }
 
 .updated:not(.published) {
@@ -485,6 +490,16 @@ Posts nav
 }
 .entry-title {
 	margin: 0 0 15px;
+	color: #90ccdc;
+}
+.entry-content {
+	color: rgba(0,0,0,0.3);
+}
+.entry-content p {
+	text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    color: rgba(0,0,0,0.3);
 }
 .single .entry-header,
 .page .entry-header {
@@ -507,7 +522,10 @@ Posts nav
 	color: rgba(144, 204, 220, 0.5);
 }
 .grid-layout .entry-title {
-	font-size: 28px;
+	font-size: 25px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
 }
 .post-meta,
 .post-meta a {
@@ -546,6 +564,9 @@ Posts nav
 	background-color: #90ccdc;
 	-webkit-transition: background-color 0.3s;
 	transition: background-color 0.3s;
+}
+#read-more-btn {
+	padding: 0px!important;
 }
 .read-more:hover {
 	background-color: rgba(144, 204, 220, 0.5);
@@ -1075,6 +1096,7 @@ Structure
 	padding: 30px 0;
 	background-color: #f3f3f3;
 	font-size: 14px;
+	text-align:  center;
 }
 .site-footer,
 .site-footer a {

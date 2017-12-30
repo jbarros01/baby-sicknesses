@@ -1,6 +1,3 @@
 export const LOADING = 'STATE_LOADING'
-export const LOADING_PAGE = 'STATE_LOADING_PAGE'
 export const ERROR = 'STATE_ERROR'
-export const NO_RESULTS = 'STATE_NO_RESULTS'
-export const SUCCESS = 'STATE_SUCCESS'
 export const READY = 'STATE_READY'
