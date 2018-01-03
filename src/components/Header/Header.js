@@ -2,11 +2,10 @@ import React from "react";
 import Navbar from "./Navbar";
 import { Link } from 'react-router';
 
-const Header = () => {
-
+const Header = props => {
     return (
         <React.Fragment>
-            <Navbar />
+            <Navbar articlesType={props.articlesType} onGetArticlesClick={props.onGetArticlesClick} />
             <header id="masthead" class="site-header" role="banner" style={{ backgroundPosition: 50% 17 }}>
                 <div class="container">
                     <div class="site-branding">						

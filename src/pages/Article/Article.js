@@ -11,6 +11,7 @@ import Footer from '../../components/Footer'
 class Article extends React.Component {
 
   render() {
+    const { article, articlesType } = this.props.articles
 
     const renderFakeArticle = () => {
         return (
@@ -25,7 +26,7 @@ class Article extends React.Component {
 
     return (
       <React.Fragment>
-        <Header />
+        <Header articlesType={articlesType} onGetArticlesClick={this.props.onGetArticlesClick} />
         <div id="page" class="hfeed site">
             <div id="content" class="site-content">
                 <div class="container content-wrapper">

@@ -330,10 +330,10 @@ Posts nav
 	width: 265px;
 	height: 100%;
 	padding: 30px;
-	background-color: #17191b;
+	background-color: #b2b2b2;
 	-webkit-transition: all 0.8s;
 	transition: all 0.8s;
-    z-index: 1111;
+	z-index: 1111;
 }
 .widget-area,
 .widget-area a {
@@ -373,14 +373,14 @@ Posts nav
 }
 .sidebar-toggled {
 	left: 265px;
-    position: fixed;
-    z-index: 101;
-    top: 8px;
-    color: #fff;
-    text-shadow: 0 0 1px #000;
-    line-height: 1;
-    cursor: pointer;
-    -webkit-transition: all 0.8s;
+	position: fixed;
+	z-index: 101;
+	top: 8px;
+	color: #fff;
+	/* text-shadow: 0 0 1px #000; */
+	line-height: 1;
+	cursor: pointer;
+	-webkit-transition: all 0.8s;
 }
 .sidebar-nav {
 	margin-bottom: 30px;
@@ -1164,7 +1164,7 @@ Menu
 .slicknav_nav li {
 	display: block;
 	padding: 5px;
-	border-bottom: 1px solid #222;
+	border-bottom: 1px solid #f3f3f3;
 	text-transform: uppercase;
 }
 .slicknav_nav li ul li {

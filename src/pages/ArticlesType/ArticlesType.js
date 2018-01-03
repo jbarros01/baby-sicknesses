@@ -12,7 +12,7 @@ import { Button } from 'react-bootstrap'
 class ArticlesType extends React.Component {
 
   render() {
-    const { articlesType } = this.props
+    const { articlesType, onGetArticlesClick } = this.props
 
     const renderArticlesType = articlesType => {
       return articlesType.map(type => {
@@ -35,7 +35,7 @@ class ArticlesType extends React.Component {
 
     return (
       <React.Fragment>
-        <Header />
+        <Header articlesType={articlesType} onGetArticlesClick={onGetArticlesClick} />
         <div id="page" class="hfeed site">
           <div id="content" class="site-content">
             <div class="container content-wrapper">

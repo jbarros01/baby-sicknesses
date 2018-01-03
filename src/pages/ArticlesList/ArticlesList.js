@@ -12,7 +12,7 @@ import { Button } from 'react-bootstrap'
 class ArticlesList extends React.Component {
 
   render() {
-    const { articlesList } = this.props.articles
+    const { articlesList, articlesType } = this.props.articles
 
     const renderArticlesList = articlesList => {
       return articlesList.map(article => {
@@ -30,7 +30,7 @@ class ArticlesList extends React.Component {
             </div>
             <Button id="read-more-btn" onClick={this.props.onGetArticleClick.bind(null, article._id)}>
               <div class="read-more">{messages.SEE_ARTICLE}</div>
-            </Button>					
+            </Button>
           </article>
         )
       })
@@ -38,7 +38,7 @@ class ArticlesList extends React.Component {
 
     return (
       <React.Fragment>
-        <Header />
+        <Header articlesType={articlesType} onGetArticlesClick={this.props.onGetArticlesClick} />
         <div id="page" class="hfeed site">
           <div id="content" class="site-content">
             <div class="container content-wrapper">
@@ -58,6 +58,8 @@ class ArticlesList extends React.Component {
   }
 }
 
-ArticlesList.propTypes = {}
+ArticlesList.propTypes = {
+  onGetArticleClick: func.isRequired
+}
 
 export default ArticlesList

@@ -1,11 +1,12 @@
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 import ArticlesList from '../../pages/ArticlesList'
-import { getArticle } from '../../actions/articles'
+import { getArticles, getArticle } from '../../actions/articles'
 
 const mapStateToProps = (state, props) => ({ ...state })
 
 const mapDispatchToProps = dispatch => ({
+    onGetArticlesClick: typeId => dispatch(getArticles(typeId)),
     onGetArticleClick: articleId => dispatch(getArticle(articleId))
 })  
 
