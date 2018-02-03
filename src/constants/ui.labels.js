@@ -1,3 +1,7 @@
 export const SEE_ARTICLES = 'Ver doenças ...'
 export const SEE_ARTICLE = 'Continuar a ler ...'
+export const MANIFESTATIONS = 'Manifestações'
+export const CAUSES = 'Causas'
+export const DIAGNOSTIC = 'Diagnóstico'
+export const TRATAMENT = 'Tratamento'
 export const RESERVED_TO = '© 2017 Gisela Costa'

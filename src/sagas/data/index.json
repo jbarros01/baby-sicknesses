@@ -8,31 +8,19 @@
                 "_id":"AT1A1",
                 "name":"Síndrome de Moebius", 
                 "description":"A Síndrome de Moebius consiste num raro distúrbio neurológico caracterizado por uma paralisia facial, onde ocorre o desenvolvimento anormal dos nervos cranianos, responsáveis pelas expressões e motricidade ocular, resultando assim, pouca expressividade facial e estrabismo convergente, ou seja, há perda de movimentos do rosto.\nEssa paralisia pode ser total (quando a pessoa não consegue realizar nenhum movimento com os músculos da face) ou parcial (quando a pessoa consegue realizar alguns movimentos, porém reduzidos).",
-                "manifestations": [
-                    { "id": "AT1A1M1", "description": "Manifestation 1" },
-                    { "id": "AT1A1M2", "description": "Manifestation 2" }
-                ],
-                "causes":[
-                    { "id": "AT1A1C1", "description": "Cause 1" },
-                    { "id": "AT1A1C2", "description": "Cause 2" }
-                ],
-                "diagnostic":"Diagnostic",
-                "tratament":"Tratament"
+                "manifestations": "• Falta de expressão facial;\n• Inabilidade para sorrir;\n• Estrabismo convergente (Quando os dois olhos não fixam o mesmo ponto ao mesmo tempo);\n• Problemas para fechar os olhos, com consequente ressecamento da córnea (olhos secos);\n• Fraqueza muscular na região superior do corpo\n• Sialorréia (produção de saliva em excesso);\n• Palato alto e estreito\n• Língua formada incorretamente;\n• Alterações da arcada dentária;\n• Alterações na fala;\n• Problemas auditivos;\n• Polidactilia e sindactilia (mais de 5 dedos e dedos unidos entre si);\n• Hérnia umbilical;\n• Atraso mental;\n• Contratura flexora do joelho e tornozelos;",
+                "causes":"• Algumas pesquisas apontam que há deficiência na formação do nervo motor que enerva os músculos da face;\n• Outras indicam que há ausência de tecido muscular para a realização dos movimentos;\n• Alguns pesquisadores defendem a teoria de que a doença seja hereditária (transmitida dos pais aos filhos através dos genes);\n• Outros acreditam que a causa seja teratogénica (malformação originada durante a gravidez e causada por agentes químicos ou físicos, como alguns remédios ingeridos pela mãe) - 49% das crianças portadoras da Síndrome de Moebius estudadas nasceram após tentativas frustradas de aborto com o uso de misoprostol (medicamento vendido com o nome de Citotec usado para o tratamento de úlcera gástrica, usado de forma clandestina para provocar abortos);",
+                "diagnostic":"O diagnóstico clínico pode ser feito após o nascimento, sendo detetada uma falta de expressão facial no recém-nascido, bem como uma ausência de sucção, resultando em uma alimentação assistida para o bebê. Também é observado o fechamento incompleto das pálpebras durante o sono e, o constante movimento de rotação da cabeça para os lados, em consequência do estrabismo convergente.",
+                "tratament":"Esta síndrome não possui nenhuma cura, no entanto, alguns sintomas podem ser tratados, proporcionando uma melhor qualidade de vida ao paciente. Estes tratamentos pode abranger procedimentos cirúrgicos, fisioterapia, fonoterapia e terapia ocupacional."
             },
             { 
                 "_id":"AT1A2",
                 "name":"Progeria", 
-                "description":"A Progeria, também conhecida com síndrome de Hutchinson-Gilford, é uma desordem genética progressiva e extremamente rara que afeta 1 em cada 4 milhões de crianças. A doença caracteriza-se pelo envelhecimento rápido (cerca de 7 vezes mais do que a taxa normal) da criança. A progeria trata-se de uma doença genética, agressivamente progressiva e sem cura.\nEstas crianças não se desenvolvem fisicamente, nem chegam à maturação sexual necessária para a reprodução, sendo que a sua esperança de vida é de 14 anos para as raparigas e 16 anos para os rapazes.",
-                "manifestations": [
-                    { "id": "AT1A2M1", "description": "Manifestation 1" },
-                    { "id": "AT1A2M2", "description": "Manifestation 2" }
-                ],
-                "causes":[
-                    { "id": "AT1A2C1", "description": "Cause 1" },
-                    { "id": "AT1A2C2", "description": "Cause 2" }
-                ],
-                "diagnostic":"Diagnostic",
-                "tratament":"Tratament"
+                "description":"A Progeria, também conhecida como síndrome de Hutchinson-Gilford, é uma desordem genética progressiva e extremamente rara que afeta 1 em cada 4 milhões de crianças. A doença caracteriza-se pelo envelhecimento rápido (cerca de 7 vezes mais do que a taxa normal) da criança. A progeria trata-se de uma doença genética, agressivamente progressiva e sem cura.\nEstas crianças não se desenvolvem fisicamente, nem chegam à maturação sexual necessária para a reprodução, sendo que a sua esperança de vida é de 14 anos para as raparigas e 16 anos para os rapazes.",
+                "manifestations":"A primeira e principal característica da Progeria é que a doença causa uma diminuição muito acentuada na taxa de crescimento do bebé durante o primeiro ano de vida. No entanto, a criança continua a desenvolver-se intelectualmente, adquirindo novas capacidades. As principais alterações na aparência vão surgindo a partir do segundo ano de idade e incluem:\n•  Rosto fino com queixo pequeno;\n•  Cabeça muito maior do que o rosto;\n•  Baixa estatura;\n•  Perda de cabelo, incluindo as pestanas e sobrancelhas;\n•  Atraso acentuado na queda e crescimento de novos dentes;\n•  Pele fina e com veias visíveis;\n•  Olhos salientes e com dificuldade para fechar as pálpebras;\n•  Envelhecimento prematuro;\n•  Micrognatia (mandibula inferior menor do que o normal);\n•  Artrose;\n•  Presença de cabelos brancos na infância;\n•  Ossos frágeis que sofrem fraturas constantes;\n•  Problemas cardiovasculares, como hipertensão e insuficiência cardíaca.",
+                "causes":"A doença é causada pela alteração num gene, conhecido como Lâmina A. Este gene é responsável por produzir uma proteína importante que mantém o núcleo das células estável. Assim, quando a mutação acontece, as células deixam de funcionar de forma normal, impedindo a regeneração dos tecidos e provocando a morte prematura das células.",
+                "diagnostic":"O diagnóstico da progéria é fundamentalmente clínico e realizado em crianças que apresentam sinais iniciais da doença, entre o primeiro e o segundo ano de vida. No entanto, após ter sido identificado o gene mutado, através da análise ao sangue da criança é agora possível detetar a presença deste mesmo.",
+                "tratament":"Não existe uma forma de tratamento específica para esta doença e, por isso, o médico sugere alguns tratamentos de acordo com os problemas que vão surgindo. Entre as formas de tratamento mais utilizadas estão:\n•  Uso diário de aspirina: permite manter o sangue mais fino, evitando a formação de coágulos que podem provocar infartos ou AVC;\n•   Sessões de fisioterapia: ajudam a aliviar a inflamação das articulações e fortalecer os músculos, evitando fraturas fáceis;\n•  Cirurgias: são utilizadas para tratar ou evitar problemas graves, especialmente no coração.\nAlém disto, o médico também pode receitar outros remédios, como Estatinas para reduzir o colesterol, ou hormonas de crescimento, caso a criança esteja muito abaixo do peso, por exemplo. Novas formas de tratamento estão a ser testadas para tentar atrasar o envelhecimento das células e desta forma, atenuar o desenvolvimento da doença e prolongar a vida."
             }
         ]
     }, 
@@ -42,7 +30,7 @@
         "articles": [
             {   
                 "_id":"AT2A1",
-                "name":"Article 4", 
+                "name":"Rubéola", 
                 "description":"Description",
                 "manifestations": [
                     { "id": "AT2A1M1", "description": "Manifestation 1" },

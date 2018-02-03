@@ -13,13 +13,33 @@ class Article extends React.Component {
   render() {
     const { article, articlesType } = this.props.articles
 
-    const renderFakeArticle = () => {
+    const renderArticle = article => {
         return (
-            <article id="fake" class="post type-post article-post status-publish format-standard hentry">
+            <article id={article._id} class="post type-post article-post status-publish format-standard hentry">
                 <header class="entry-header">
-                    <h1 class="entry-title">Title</h1>
+                    <h2 class="entry-title">{article.name}</h2>
                 </header> 
-                <div class="entry-content">Description</div>
+                <div class="entry-content">
+                    <div class="post-section" id="description">
+                        <p>{article.description}</p>
+                    </div>
+                    <div class="post-section" id="manifestations">
+                        <h3>{messages.MANIFESTATIONS}</h3>
+                        <p>{article.manifestations}</p>
+                    </div>
+                    <div class="post-section" id="causes">
+                        <h3>{messages.CAUSES}</h3>
+                        <p>{article.causes}</p>
+                    </div>
+                    <div class="post-section" id="diagnostic">
+                        <h3>{messages.DIAGNOSTIC}</h3>
+                        <p>{article.diagnostic}</p>
+                    </div>
+                    <div class="post-section" id="tratament">
+                        <h3>{messages.TRATAMENT}</h3>
+                        <p>{article.tratament}</p>
+                    </div>
+                </div>
             </article>
         )
     }
@@ -32,7 +52,7 @@ class Article extends React.Component {
                 <div class="container content-wrapper">
                     <div id="primary" class="content-area">
                         <main id="main" class="site-main" role="main">
-                            {renderFakeArticle()}
+                            {renderArticle(article)}
                         </main>
                     </div>
                 </div>
