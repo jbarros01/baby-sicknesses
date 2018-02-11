@@ -504,7 +504,7 @@ Posts nav
 }
 .post-inner .entry-content {
 	overflow: hidden;
-	height: 70px;
+	height: 65px;
 }
 .post-inner .entry-content p {
 	display: -webkit-box;
@@ -2059,7 +2059,7 @@ Responsive
 }
 @media only screen and (max-width: 767px) {
 	.grid-layout .hentry {
-		width: 100%;
+		width: 90%;
 		max-width: 370px;
 		margin: 0 auto 30px;
 	}
