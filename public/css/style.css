@@ -81,7 +81,7 @@ a:hover {
 }
 
 .container {
-	width: 100%!important;
+	width: 100%;
 }
 
 .navbar {
@@ -95,6 +95,12 @@ a:hover {
 
 nav .container {
 	min-height: 40px;
+}
+
+.grid-article .article-post {
+	padding: 30px !important;
+	padding-top: 50px !important;
+	background-color: #fff !important;
 }
 
 /*--------------------------------------------------------------
@@ -2071,6 +2077,9 @@ Responsive
 		max-width: 370px;
 		margin: 0 auto;
 	}
+	.grid-article {
+		width: 90%!important;
+	}
 	.site-title {
 		font-size: 28px !important;
 	}
@@ -2144,7 +2153,8 @@ Responsive
 		padding: 15px;
 	}
 	.hentry {
-		padding: 15px;
+		padding: 30px;
+		padding-top: 40px;
 	}
 	.entry-title {
 		font-size: 26px;
@@ -2170,7 +2180,7 @@ Responsive
 		text-align: center;
 	}
 	.content-wrapper {
-		padding: 0;
+		padding: 0px;
 	}
 	.top-bar {
 		right: 20px;

@@ -51,9 +51,11 @@ class Article extends React.Component {
             <div id="content" class="site-content">
                 <div class="container content-wrapper">
                     <div id="primary" class="content-area">
-                        <main id="main" class="site-main" role="main">
-                            {renderArticle(article)}
-                        </main>
+                        <div id="ob-grid" class="grid-layout grid-article">
+                            <main id="main" class="site-main" role="main">
+                                {renderArticle(article)}
+                            </main>
+                        </div>
                     </div>
                 </div>
             </div>
