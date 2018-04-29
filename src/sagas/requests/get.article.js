@@ -2,7 +2,7 @@ import { put, takeLatest } from 'redux-saga/effects'
 import { getArticleSuccess, getArticleError } from '../../actions'
 import { GET_ARTICLE } from '../../constants/action.types'
 
-export function readArticle(articleId) {
+function readArticle(articleId) {
   const data = require('../data/index.json')
   const articlesByType = data.baby_sicknesses.map(articleType => {
     return articleType.articles

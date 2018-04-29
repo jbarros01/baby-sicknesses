@@ -1,12 +1,12 @@
 import { connect } from 'react-redux'
-import { bindActionCreators } from 'redux'
 import ArticlesType from '../../pages/ArticlesType'
-import { getArticles } from '../../actions/articles'
+import { getArticles, getArticleSearch } from '../../actions/articles'
 
 const mapStateToProps = (state, props) => ({ ...state.articles })
 
 const mapDispatchToProps = dispatch => ({
-  onGetArticlesClick: typeId => dispatch(getArticles(typeId))
+  onGetArticlesClick: typeId => dispatch(getArticles(typeId)),
+  onSearchSubmit: article => dispatch(getArticleSearch(article))
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(ArticlesType)

@@ -95,6 +95,7 @@ a:hover {
 
 nav .container {
 	min-height: 40px;
+	max-width:  100%;
 }
 
 .grid-article .article-post {
@@ -114,6 +115,17 @@ textarea {
 	margin: 0; /* Addresses margins set differently in IE6/7, F3/4, S5, Chrome */
 	font-size: 100%; /* Corrects font size not being inherited in all browsers */
 	vertical-align: baseline; /* Improves appearance and consistency in all browsers */
+}
+
+.search-input {
+	float: right;
+	margin-top: 4px;
+}
+.search-input input {
+	padding: 4px!important;
+	border: 0px!important;
+	border-bottom: 1px solid rgba(0,0,0,0.3)!important;
+	border-radius:  0px!important;
 }
 
 button,
@@ -192,6 +204,7 @@ textarea {
 	border: 1px solid rgba(0,0,0,0.3);
 	border-radius: 3px;
 	color: rgba(0,0,0,0.3);
+	margin-right: 25px;
 }
 
 input[type="text"]:focus,
@@ -467,6 +480,18 @@ Posts nav
 # Content
 --------------------------------------------------------------*/
 
+.empty-articles {
+	color: #fff;
+	font-size: 2rem;
+}
+
+.empty-articles div {
+	margin-top: 10px;
+}
+
+.empty-articles img {
+	width: 100px;
+}
 
 /*--------------------------------------------------------------
 ## Posts and pages
@@ -2061,6 +2086,12 @@ Responsive
 	.top-bar {
 		right: 20px;
 		top: 5px;
+	}
+	.empty-articles {
+		font-size: 1rem;
+	}
+	.empty-articles img {
+		width: 65px;
 	}
 }
 @media only screen and (max-width: 767px) {

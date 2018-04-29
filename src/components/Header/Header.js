@@ -5,7 +5,9 @@ import { Link } from 'react-router';
 const Header = props => {
     return (
         <React.Fragment>
-            <Navbar articlesType={props.articlesType} onGetArticlesClick={props.onGetArticlesClick} />
+            <Navbar articlesType={props.articlesType} 
+                    onGetArticlesClick={props.onGetArticlesClick} 
+                    onSearchSubmit={props.onSearchSubmit}/>
             <header id="masthead" class="site-header" role="banner" style={{ backgroundPosition: 50% 17 }}>
                 <div class="container">
                     <div class="site-branding">						

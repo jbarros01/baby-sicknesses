@@ -43,7 +43,7 @@ export default (state = initialState, action) => {
         ...state,
         status: states.ERROR
       }
-      case actionTypes.GET_ARTICLE:
+    case actionTypes.GET_ARTICLE:
       return {
         ...state,
         status: states.LOADING
@@ -55,6 +55,22 @@ export default (state = initialState, action) => {
         status: states.READY
       }
     case actionTypes.GET_ARTICLE_FAILURE:
+      return {
+        ...state,
+        status: states.ERROR
+      }
+    case actionTypes.GET_ARTICLE_SEARCH:
+      return {
+        ...state,
+        status: states.LOADING
+      }
+    case actionTypes.GET_ARTICLE_SEARCH_SUCCESS:
+      return {
+        ...state,
+        ...action.payload,
+        status: states.READY
+      }
+    case actionTypes.GET_ARTICLE_SEARCH_FAILURE:
       return {
         ...state,
         status: states.ERROR

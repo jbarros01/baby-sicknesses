@@ -9,6 +9,7 @@ export default store => next => action => {
       store.dispatch(routerActions.goBack())
       break
     case types.GET_ARTICLES:
+    case types.GET_ARTICLE_SEARCH:
       store.dispatch(routerActions.push(ARTICLES_LIST))
       break
     case types.GET_ARTICLE:

@@ -1,10 +1,6 @@
 import React from 'react'
-import { func, string, shape } from 'prop-types'
-import moment from 'moment'
 import 'moment-timezone'
 import * as messages from '../../constants/ui.labels'
-import * as ui from '../../constants/ui.constants'
-import * as states from '../../constants/state.types'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 
@@ -46,7 +42,9 @@ class Article extends React.Component {
 
     return (
       <React.Fragment>
-        <Header articlesType={articlesType} onGetArticlesClick={this.props.onGetArticlesClick} />
+        <Header articlesType={articlesType} 
+                onGetArticlesClick={this.props.onGetArticlesClick} 
+                onSearchSubmit={this.props.onSearchSubmit} />
         <div id="page" class="hfeed site">
             <div id="content" class="site-content">
                 <div class="container content-wrapper">

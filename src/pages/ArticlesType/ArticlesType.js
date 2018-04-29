@@ -1,10 +1,7 @@
 import React from 'react'
-import { func, string, shape, arrayOf } from 'prop-types'
-import moment from 'moment'
+import { func } from 'prop-types'
 import 'moment-timezone'
 import * as messages from '../../constants/ui.labels'
-import * as ui from '../../constants/ui.constants'
-import * as states from '../../constants/state.types'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import { Button } from 'react-bootstrap'
@@ -12,8 +9,8 @@ import { Button } from 'react-bootstrap'
 class ArticlesType extends React.Component {
 
   render() {
-    const { articlesType, onGetArticlesClick } = this.props
-
+    const { articlesType, onGetArticlesClick, onSearchSubmit} = this.props
+    
     const renderArticlesType = articlesType => {
       return articlesType.map(type => {
         return (
@@ -35,7 +32,9 @@ class ArticlesType extends React.Component {
 
     return (
       <React.Fragment>
-        <Header articlesType={articlesType} onGetArticlesClick={onGetArticlesClick} />
+        <Header articlesType={articlesType} 
+                onGetArticlesClick={onGetArticlesClick} 
+                onSearchSubmit={onSearchSubmit} />
         <div id="page" class="hfeed site">
           <div id="content" class="site-content">
             <div class="container content-wrapper">
