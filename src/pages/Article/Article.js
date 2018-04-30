@@ -44,6 +44,7 @@ class Article extends React.Component {
       <React.Fragment>
         <Header articlesType={articlesType} 
                 onGetArticlesClick={this.props.onGetArticlesClick} 
+                onAboutClick={this.props.onAboutClick}
                 onSearchSubmit={this.props.onSearchSubmit} />
         <div id="page" class="hfeed site">
             <div id="content" class="site-content">

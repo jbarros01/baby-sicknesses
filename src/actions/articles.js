@@ -63,3 +63,15 @@ export const getArticleSearchError = actionCreator(
   actionTypes.GET_ARTICLE_SEARCH_FAILURE,
   error => ({ ...error })
 )
+
+export const getAbout = actionCreator(actionTypes.GET_ABOUT)
+
+export const getAboutSuccess = actionCreator(
+  actionTypes.GET_ABOUT_SUCCESS,
+  about => ({ ...about })
+)
+
+export const getAboutError = actionCreator(
+  actionTypes.GET_ABOUT_FAILURE,
+  error => ({ ...error })
+)

@@ -9,7 +9,7 @@ import { Button } from 'react-bootstrap'
 class ArticlesType extends React.Component {
 
   render() {
-    const { articlesType, onGetArticlesClick, onSearchSubmit} = this.props
+    const { articlesType, onGetArticlesClick, onAboutClick, onSearchSubmit} = this.props
     
     const renderArticlesType = articlesType => {
       return articlesType.map(type => {
@@ -34,6 +34,7 @@ class ArticlesType extends React.Component {
       <React.Fragment>
         <Header articlesType={articlesType} 
                 onGetArticlesClick={onGetArticlesClick} 
+                onAboutClick={onAboutClick}
                 onSearchSubmit={onSearchSubmit} />
         <div id="page" class="hfeed site">
           <div id="content" class="site-content">

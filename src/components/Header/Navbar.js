@@ -24,14 +24,22 @@ class Nav extends React.Component {
     })
   }
 
-  renderSidebarOptions(articlesType, onGetArticlesClick) {
-    return articlesType.map(type => {
-      return (
-        <li class="page_item">
-          <a href="#" role="menuitem" onClick={this.props.onGetArticlesClick.bind(null, type._id)}>{type.name}</a>
-        </li>
-      )
-    })
+  renderSidebarOptions(articlesType, onGetArticlesClick, onAboutClick) {
+    const articleOptions = articlesType.map(type => {
+        return (
+          <li class="page_item">
+            <a href="#" role="menuitem" onClick={onGetArticlesClick.bind(null, type._id)}>{type.name}</a>
+          </li>
+        )
+      })
+    
+    const aboutOption = <li class="page_item">
+                          <a href="#" role="menuitem" onClick={onAboutClick.bind(null)}>{messages.ABOUT}</a>
+                        </li>
+
+    articleOptions.push(aboutOption)
+
+    return articleOptions
   }
 
   handlerKeyPress(event) {
@@ -41,7 +49,7 @@ class Nav extends React.Component {
   }
 
   render() {
-    const { articlesType, onGetArticlesClick } = this.props
+    const { articlesType, onGetArticlesClick, onAboutClick } = this.props
 
     return (
       <React.Fragment>
@@ -51,7 +59,8 @@ class Nav extends React.Component {
                 <i class="material-icons">{this.state.icon}</i>
               </div>
               <div className="search-input">
-                <input type="text" placeholder={messages.SEARCH_ARTICLES} onKeyDown={this.handlerKeyPress} />
+                <span><i class="material-icons">search</i></span>
+                <span><input type="text" placeholder={messages.SEARCH_ARTICLES} onKeyDown={this.handlerKeyPress} /></span>
               </div>
             </Navbar.Header>
           </Navbar>
@@ -59,7 +68,7 @@ class Nav extends React.Component {
             <nav id="site-navigation" class="main-navigation" role="navigation">
               <div id="primary-menu" class="menu">
                 <ul>
-                  {this.renderSidebarOptions(articlesType, onGetArticlesClick)}
+                  {this.renderSidebarOptions(articlesType, onGetArticlesClick, onAboutClick)}
                 </ul>
               </div>
             </nav>
@@ -75,7 +84,7 @@ class Nav extends React.Component {
                 </a>
                 <div class="slicknav_nav slicknav_hidden" style={{ display: 'none' }} role="menu">
                   <ul>
-                    {this.renderSidebarOptions(articlesType, onGetArticlesClick)}
+                    {this.renderSidebarOptions(articlesType, onGetArticlesClick, onAboutClick)}
                   </ul>
                 </div>
               </div>

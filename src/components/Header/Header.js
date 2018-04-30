@@ -7,6 +7,7 @@ const Header = props => {
         <React.Fragment>
             <Navbar articlesType={props.articlesType} 
                     onGetArticlesClick={props.onGetArticlesClick} 
+                    onAboutClick={props.onAboutClick} 
                     onSearchSubmit={props.onSearchSubmit}/>
             <header id="masthead" class="site-header" role="banner" style={{ backgroundPosition: 50% 17 }}>
                 <div class="container">

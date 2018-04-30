@@ -493,6 +493,21 @@ Posts nav
 	width: 100px;
 }
 
+.search-input span {
+	display: inline-block;
+}
+
+.search-input span:first-child {
+    position: relative;
+    vertical-align: middle;
+    margin-right: 5px;
+    margin-bottom: -5px;
+}
+
+.search-input i {
+	color: rgba(0,0,0,0.3);
+}
+
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/

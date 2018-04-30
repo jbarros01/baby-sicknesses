@@ -9,7 +9,7 @@ import { Button } from 'react-bootstrap'
 class ArticlesList extends React.Component {
 
   render() {
-    const { articlesList, articlesType } = this.props.articles
+    const { articlesList, articlesType, } = this.props.articles
 
     const renderArticlesList = articlesList => {
       return articlesList.map(article => {
@@ -36,7 +36,7 @@ class ArticlesList extends React.Component {
     const renderNotFoundElement = () => {
       return (
         <div class="empty-articles">
-          <img src="/img/sick-emoji.png"/>
+          <img alt="sick-emoji" src="/img/sick-emoji.png"/>
           <div>{messages.NONE_ARTICLE}</div>
         </div>
       )
@@ -46,6 +46,7 @@ class ArticlesList extends React.Component {
       <React.Fragment>
         <Header articlesType={articlesType} 
                 onGetArticlesClick={this.props.onGetArticlesClick} 
+                onAboutClick={this.props.onAboutClick} 
                 onSearchSubmit={this.props.onSearchSubmit} />
         <div id="page" class="hfeed site">
           <div id="content" class="site-content">
