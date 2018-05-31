@@ -1,3 +1,4 @@
+export const SITE_TITLE = 'Doenças Infantis'
 export const SEARCH_ARTICLES = 'Procurar doença ...'
 export const SEE_ARTICLES = 'Ver doenças ...'
 export const SEE_ARTICLE = 'Continuar a ler ...'

@@ -35,7 +35,8 @@ class ArticlesType extends React.Component {
         <Header articlesType={articlesType} 
                 onGetArticlesClick={onGetArticlesClick} 
                 onAboutClick={onAboutClick}
-                onSearchSubmit={onSearchSubmit} />
+                onSearchSubmit={onSearchSubmit} 
+                hasReturn={false} />
         <div id="page" class="hfeed site">
           <div id="content" class="site-content">
             <div class="container content-wrapper">

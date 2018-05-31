@@ -5,12 +5,12 @@ import { ArticlesType, ArticlesList, Article, About } from '../containers'
 import { HOME, ARTICLES_LIST, ARTICLE, ABOUT } from '../constants/routes'
 
 export default () => (
-  <div>
+  <React.Fragment>
     <Route path={HOME} component={App}>
       <IndexRoute component={ArticlesType} />
     </Route>
     <Route path={ARTICLES_LIST} component={ArticlesList} />
     <Route path={ARTICLE} component={Article} />
     <Route path={ABOUT} component={About} />
-  </div>
+  </React.Fragment>
 )

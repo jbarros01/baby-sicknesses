@@ -47,7 +47,8 @@ class ArticlesList extends React.Component {
         <Header articlesType={articlesType} 
                 onGetArticlesClick={this.props.onGetArticlesClick} 
                 onAboutClick={this.props.onAboutClick} 
-                onSearchSubmit={this.props.onSearchSubmit} />
+                onSearchSubmit={this.props.onSearchSubmit} 
+                hasReturn={true} />
         <div id="page" class="hfeed site">
           <div id="content" class="site-content">
             <div class="container content-wrapper">

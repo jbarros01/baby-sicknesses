@@ -17,23 +17,23 @@ class Article extends React.Component {
                 </header> 
                 <div class="entry-content">
                     <div class="post-section" id="description">
-                        <p>{article.description}</p>
+                        <p dangerouslySetInnerHTML={ { __html: article.description } }></p>
                     </div>
                     <div class="post-section" id="manifestations">
                         <h3>{messages.MANIFESTATIONS}</h3>
-                        <p>{article.manifestations}</p>
+                        <p dangerouslySetInnerHTML={ { __html: article.manifestations } }></p>
                     </div>
                     <div class="post-section" id="causes">
                         <h3>{messages.CAUSES}</h3>
-                        <p>{article.causes}</p>
+                        <p dangerouslySetInnerHTML={ { __html: article.causes } }></p>
                     </div>
                     <div class="post-section" id="diagnostic">
                         <h3>{messages.DIAGNOSTIC}</h3>
-                        <p>{article.diagnostic}</p>
+                        <p dangerouslySetInnerHTML={ { __html: article.diagnostic } }></p>
                     </div>
                     <div class="post-section" id="tratament">
                         <h3>{messages.TRATAMENT}</h3>
-                        <p>{article.tratament}</p>
+                        <p dangerouslySetInnerHTML={ { __html: article.tratament } }></p>
                     </div>
                 </div>
             </article>
@@ -45,7 +45,8 @@ class Article extends React.Component {
         <Header articlesType={articlesType} 
                 onGetArticlesClick={this.props.onGetArticlesClick} 
                 onAboutClick={this.props.onAboutClick}
-                onSearchSubmit={this.props.onSearchSubmit} />
+                onSearchSubmit={this.props.onSearchSubmit} 
+                hasReturn={true} />
         <div id="page" class="hfeed site">
             <div id="content" class="site-content">
                 <div class="container content-wrapper">
