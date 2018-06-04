@@ -861,8 +861,34 @@ img[class*="wp-image-"] {
 	margin-top: 15px;
 	margin-bottom: 15px;
 }
-
-
+div#progeria_lindsay {
+	text-align: center;
+	padding: 20px 0px;
+}
+div.lateral_image {
+	position: relative;
+}
+div.lateral_image span:first-child {
+    width: 65%;
+}
+div#palatina span:first-child {
+	width: 40%;
+}
+div.lateral_image span {
+	display: inline-block;
+    width: 150px;
+}
+div.lateral_image img {
+	width: 130px;
+	position: absolute;
+    top: -40px;
+}
+div#palatina img {
+	top: -30px;
+}
+div#aase_hands img {
+	top: -5px;
+}
 /*--------------------------------------------------------------
 ## Captions
 --------------------------------------------------------------*/
@@ -2166,6 +2192,18 @@ Responsive
 	}
 	.single-product div.single_product_bottom_svg {
 		bottom: -43px;
+	}
+	div.lateral_image span {
+		width: 100%!important;
+	}
+	div.lateral_image span:nth-child(2) {
+		text-align: center;
+	}
+	div.lateral_image img {
+		width: 150px;
+		position: relative;
+		top: 0px!important;
+		padding: 10px 0px;
 	}
 }
 @media only screen and (max-width: 600px) {
