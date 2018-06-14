@@ -24,20 +24,25 @@ class Nav extends React.Component {
     })
   }
 
-  renderSidebarOptions(articlesType, onGetArticlesClick, onAboutClick) {
+  renderSidebarOptions(articlesType, onGetArticlesClick, onAboutClick, onWebgraphyClick) {
     const articleOptions = articlesType.map(type => {
         return (
           <li class="page_item">
-            <a href="#" role="menuitem" onClick={onGetArticlesClick.bind(null, type._id)}>{type.name}</a>
+            <a role="menuitem" onClick={onGetArticlesClick.bind(null, type._id)}>{type.name}</a>
           </li>
         )
       })
     
     const aboutOption = <li class="page_item">
-                          <a href="#" role="menuitem" onClick={onAboutClick.bind(null)}>{messages.ABOUT}</a>
+                          <a role="menuitem" onClick={onAboutClick.bind(null)}>{messages.ABOUT}</a>
+                        </li>
+    
+    const webgraphyOption = <li class="page_item">
+                          <a role="menuitem" onClick={onWebgraphyClick.bind(null)}>{messages.WEBGRAPHY}</a>
                         </li>
 
     articleOptions.push(aboutOption)
+    articleOptions.push(webgraphyOption)
 
     return articleOptions
   }
@@ -49,7 +54,7 @@ class Nav extends React.Component {
   }
 
   render() {
-    const { articlesType, onGetArticlesClick, onAboutClick } = this.props
+    const { articlesType, onGetArticlesClick, onAboutClick, onWebgraphyClick } = this.props
 
     return (
       <React.Fragment>
@@ -68,7 +73,7 @@ class Nav extends React.Component {
             <nav id="site-navigation" class="main-navigation" role="navigation">
               <div id="primary-menu" class="menu">
                 <ul>
-                  {this.renderSidebarOptions(articlesType, onGetArticlesClick, onAboutClick)}
+                  {this.renderSidebarOptions(articlesType, onGetArticlesClick, onAboutClick, onWebgraphyClick)}
                 </ul>
               </div>
             </nav>
@@ -84,7 +89,7 @@ class Nav extends React.Component {
                 </a>
                 <div class="slicknav_nav slicknav_hidden" style={{ display: 'none' }} role="menu">
                   <ul>
-                    {this.renderSidebarOptions(articlesType, onGetArticlesClick, onAboutClick)}
+                    {this.renderSidebarOptions(articlesType, onGetArticlesClick, onAboutClick, onWebgraphyClick)}
                   </ul>
                 </div>
               </div>

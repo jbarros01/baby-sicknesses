@@ -91,6 +91,22 @@ export default (state = initialState, action) => {
         ...state,
         status: states.ERROR
       }
+    case actionTypes.GET_WEBGRAPHY:
+      return {
+        ...state,
+        status: states.LOADING
+      }
+    case actionTypes.GET_WEBGRAPHY_SUCCESS:
+      return {
+        ...state,
+        ...action.payload,
+        status: states.READY
+      }
+    case actionTypes.GET_WEBGRAPHY_FAILURE:
+      return {
+        ...state,
+        status: states.ERROR
+      }
     default:
       return state
   }

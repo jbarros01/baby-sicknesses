@@ -45,6 +45,7 @@ class Article extends React.Component {
         <Header articlesType={articlesType} 
                 onGetArticlesClick={this.props.onGetArticlesClick} 
                 onAboutClick={this.props.onAboutClick}
+                onWebgraphyClick={this.props.onWebgraphyClick}
                 onSearchSubmit={this.props.onSearchSubmit} 
                 hasReturn={true} />
         <div id="page" class="hfeed site">
@@ -60,7 +61,7 @@ class Article extends React.Component {
                 </div>
             </div>
         </div>
-        <Footer />
+        <Footer onAboutClick={this.props.onAboutClick} />
       </React.Fragment>
     )
   }

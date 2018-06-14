@@ -42,9 +42,19 @@ Oblique is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic
     font-feature-settings: 'liga';
 }
 
+.background-filter {
+	background-color: rgba(0,0,0,0.3);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+	bottom: 0;
+	z-index: -1;
+}
+
 body {
 	color: #383A3C;
-	background: url(/img/background.png) no-repeat center center fixed;
+	background: url(/img/desenho.jpg) no-repeat center center fixed;
 	-webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -102,6 +112,47 @@ nav .container {
 	padding: 30px !important;
 	padding-top: 50px !important;
 	background-color: #fff !important;
+}
+
+div.help {
+	position: fixed;
+    bottom: 5px;
+    right: 15px;
+}
+
+div.help i {
+	cursor: pointer;
+	font-size: 60px;
+	animation: bounce 1s infinite alternate;
+	-webkit-animation: bounce 1s infinite alternate;
+}
+
+a {
+	cursor: pointer;
+}
+
+@keyframes bounce {
+	from {
+		transform: translateY(0px);
+	}
+	to {
+		transform: translateY(-15px);
+	}
+}
+@-webkit-keyframes bounce {
+	from {
+		transform: translateY(0px);
+	}
+	to {
+		transform: translateY(-15px);
+	}
+}
+
+.article-post p {
+	text-align: justify;
+}
+#articles-web p {
+	white-space: pre-wrap;
 }
 
 /*--------------------------------------------------------------
@@ -550,7 +601,7 @@ Posts nav
 }
 .post-inner .entry-content {
 	overflow: hidden;
-	height: 65px;
+	height: 67px;
 }
 .post-inner .entry-content p {
 	display: -webkit-box;
@@ -869,26 +920,25 @@ div.lateral_image {
 	position: relative;
 }
 div.lateral_image span:first-child {
-    width: 65%;
+    width: 70%;
 }
-div#palatina span:first-child {
-	width: 40%;
+div.lateral_image span:nth-child(2) {
+    margin-left: 10px;
 }
 div.lateral_image span {
 	display: inline-block;
     width: 150px;
 }
 div.lateral_image img {
-	width: 130px;
+	width: 120px;
 	position: absolute;
-    top: -40px;
+	top: -40px;
+	height: 100px;
 }
 div#palatina img {
 	top: -30px;
 }
-div#aase_hands img {
-	top: -5px;
-}
+
 /*--------------------------------------------------------------
 ## Captions
 --------------------------------------------------------------*/
@@ -2115,6 +2165,9 @@ Responsive
 	.single-product section.related {
 		margin-top: 15px;
 	}
+	.lateral_image span:nth-child(2) {
+		display: none;
+	}
 }
 @media only screen and (max-width: 768px) {
 	.woocommerce ul.products li.product:nth-of-type(4n+1),
@@ -2204,6 +2257,9 @@ Responsive
 		position: relative;
 		top: 0px!important;
 		padding: 10px 0px;
+	}
+	div.help {
+		display: none;
 	}
 }
 @media only screen and (max-width: 600px) {

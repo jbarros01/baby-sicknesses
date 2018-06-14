@@ -2,7 +2,7 @@
     "baby_sicknesses": [
     {
         "_id": "AT1",
-        "article_type": "Raras",
+        "article_type": "Genéticas",
         "articles": [
             {   
                 "_id":"AT1A1",
@@ -11,7 +11,8 @@
                 "manifestations": "• Falta de expressão facial;\n• Inabilidade para sorrir;\n• Estrabismo convergente (Quando os dois olhos não fixam o mesmo ponto ao mesmo tempo);\n• Problemas para fechar os olhos, com consequente ressecamento da córnea (olhos secos);\n• Fraqueza muscular na região superior do corpo\n• Sialorréia (produção de saliva em excesso);\n• Palato alto e estreito\n• Língua formada incorretamente;\n• Alterações da arcada dentária;\n• Alterações na fala;\n• Problemas auditivos;\n• Polidactilia e sindactilia (mais de 5 dedos e dedos unidos entre si);\n• Hérnia umbilical;\n• Atraso mental;\n• Contratura flexora do joelho e tornozelos;",
                 "causes":"• Algumas pesquisas apontam que há deficiência na formação do nervo motor que enerva os músculos da face;\n• Outras indicam que há ausência de tecido muscular para a realização dos movimentos;\n• Alguns pesquisadores defendem a teoria de que a doença seja hereditária (transmitida dos pais aos filhos através dos genes);\n• Outros acreditam que a causa seja teratogénica (malformação originada durante a gravidez e causada por agentes químicos ou físicos, como alguns remédios ingeridos pela mãe) - 49% das crianças portadoras da Síndrome de Moebius estudadas nasceram após tentativas frustradas de aborto com o uso de misoprostol (medicamento vendido com o nome de Citotec usado para o tratamento de úlcera gástrica, usado de forma clandestina para provocar abortos);",
                 "diagnostic":"O diagnóstico clínico pode ser feito após o nascimento, sendo detetada uma falta de expressão facial no recém-nascido, bem como uma ausência de sucção, resultando em uma alimentação assistida para o bebê. Também é observado o fechamento incompleto das pálpebras durante o sono e, o constante movimento de rotação da cabeça para os lados, em consequência do estrabismo convergente.",
-                "tratament":"Esta síndrome não possui nenhuma cura, no entanto, alguns sintomas podem ser tratados, proporcionando uma melhor qualidade de vida ao paciente. Estes tratamentos pode abranger procedimentos cirúrgicos, fisioterapia, fonoterapia e terapia ocupacional."
+                "tratament":"Esta síndrome não possui nenhuma cura, no entanto, alguns sintomas podem ser tratados, proporcionando uma melhor qualidade de vida ao paciente. Estes tratamentos pode abranger procedimentos cirúrgicos, fisioterapia, fonoterapia e terapia ocupacional.",
+                "webgraphy":"blabla\nblabla\nblabla"
             },
             { 
                 "_id":"AT1A2",
@@ -20,7 +21,8 @@
                 "manifestations":"A primeira e principal característica da Progeria é que a doença causa uma diminuição muito acentuada na taxa de crescimento do bebé durante o primeiro ano de vida. No entanto, a criança continua a desenvolver-se intelectualmente, adquirindo novas capacidades. As principais alterações na aparência vão surgindo a partir do segundo ano de idade e incluem:\n•  Rosto fino com queixo pequeno;\n•  Cabeça muito maior do que o rosto;\n•  Baixa estatura;\n•  Perda de cabelo, incluindo as pestanas e sobrancelhas;\n•  Atraso acentuado na queda e crescimento de novos dentes;\n•  Pele fina e com veias visíveis;\n•  Olhos salientes e com dificuldade para fechar as pálpebras;\n•  Envelhecimento prematuro;\n•  Micrognatia (mandibula inferior menor do que o normal);\n•  Artrose;\n•  Presença de cabelos brancos na infância;\n•  Ossos frágeis que sofrem fraturas constantes;\n•  Problemas cardiovasculares, como hipertensão e insuficiência cardíaca.",
                 "causes":"A doença é causada pela alteração num gene, conhecido como Lâmina A. Este gene é responsável por produzir uma proteína importante que mantém o núcleo das células estável. Assim, quando a mutação acontece, as células deixam de funcionar de forma normal, impedindo a regeneração dos tecidos e provocando a morte prematura das células.",
                 "diagnostic":"O diagnóstico da progéria é fundamentalmente clínico e realizado em crianças que apresentam sinais iniciais da doença, entre o primeiro e o segundo ano de vida. No entanto, após ter sido identificado o gene mutado, através da análise ao sangue da criança é agora possível detetar a presença deste mesmo.",
-                "tratament":"Não existe uma forma de tratamento específica para esta doença e, por isso, o médico sugere alguns tratamentos de acordo com os problemas que vão surgindo. Entre as formas de tratamento mais utilizadas estão:\n•  Uso diário de aspirina: permite manter o sangue mais fino, evitando a formação de coágulos que podem provocar infartos ou AVC;\n•   Sessões de fisioterapia: ajudam a aliviar a inflamação das articulações e fortalecer os músculos, evitando fraturas fáceis;\n•  Cirurgias: são utilizadas para tratar ou evitar problemas graves, especialmente no coração.\nAlém disto, o médico também pode receitar outros remédios, como Estatinas para reduzir o colesterol, ou hormonas de crescimento, caso a criança esteja muito abaixo do peso, por exemplo. Novas formas de tratamento estão a ser testadas para tentar atrasar o envelhecimento das células e desta forma, atenuar o desenvolvimento da doença e prolongar a vida."
+                "tratament":"Não existe uma forma de tratamento específica para esta doença e, por isso, o médico sugere alguns tratamentos de acordo com os problemas que vão surgindo. Entre as formas de tratamento mais utilizadas estão:\n•  Uso diário de aspirina: permite manter o sangue mais fino, evitando a formação de coágulos que podem provocar infartos ou AVC;\n•   Sessões de fisioterapia: ajudam a aliviar a inflamação das articulações e fortalecer os músculos, evitando fraturas fáceis;\n•  Cirurgias: são utilizadas para tratar ou evitar problemas graves, especialmente no coração.\nAlém disto, o médico também pode receitar outros remédios, como Estatinas para reduzir o colesterol, ou hormonas de crescimento, caso a criança esteja muito abaixo do peso, por exemplo. Novas formas de tratamento estão a ser testadas para tentar atrasar o envelhecimento das células e desta forma, atenuar o desenvolvimento da doença e prolongar a vida.",
+                "webgraphy":"blabla\nblabla\nblabla"
             },
             {   
                 "_id":"AT1A3",
@@ -29,13 +31,14 @@
                 "manifestations": "<div class=\"lateral_image\" id=\"hidrocefalia\"><span>• Hidrocefalia (acumulação de líquido cefalorraquidiano no interior da cavidade craniana);</span><span><img alt=\"hidrocefalia\" src=\"/img/hidrocefalia.jpeg\"/></span></div>\n• Orelhas deformadas;\n• Contraturas;\n<div class=\"lateral_image\" id=\"palatina\"><span>• Fenda palatina (fenda labial);</span><span><img alt=\"fenda_palatina\" src=\"/img/fenda_palatina.jpeg\"/></span></div>\n• Pés deformados;\n• Escoliose (encurvamento da coluna vertebral);\n• Luxação de quadril;\n• Pálpebras caídas;\n• Alargamento nasal;\n• Pele pálida, em consequência da anemia;\n• Queixo pequeno;\n• Ombros estreitos;\n• Tripla articulação do polegar;<div class=\"lateral_image\" id=\"aase_hands\"><span>\n• Articulações, dos dedos das mãos ou pés, pequenas ouausentes;\n• Dificuldade para esticar completamente as articulações.</span><span><img alt=\"aase_hands\" src=\"/img/aase_hands.jpeg\"/></span></div>",
                 "causes":"A síndrome de Aase é provocada por uma alteração, durante a gestação, num dos 9 genes mais importantes para a formação de proteínas no organismo. Podendo, no entanto, se tratar de também de um caso de hereditariedade, passando dos pais para o filho.",
                 "diagnostic":"O diagnóstico é obtido através de:\n• Biópsia da medula óssea (mielograma);\n• Hemograma, que identifica a presença de anemia e umaredução na contagem de glóbulos brancos;\n• Ecocardiograma, que é capaz de evidenciar malformaçõescardíacas;\n• Radiografia, que mostra as anormalidades esqueléticaspresentes nesta síndrome.",
-                "tratament":"O tratamento geralmente é indicado pelo pediatra e inclui transfusões de sangue durante o primeiro ano de vida para ajudar a controlar a anemia. Ao longo dos anos, a anemia vai sendo menos acentuada e, por isso, as transfusões podem deixar de ser necessárias, não deixando, no entanto, de fazer exames de sangue frequentes. Caso as transfusões não levem a resultados satisfatórios, existe a opção de um transplante de medula que vai corrigir a forma como a medula produz as células do sangue, melhorando a anemia. Já as malformações raramente necessitam de tratamento, pois não prejudicam as atividades diárias. Mas, se isso acontecer, o pediatra pode recomendar cirurgias para tentar reconstruir o local afetado e devolver a função."
+                "tratament":"O tratamento geralmente é indicado pelo pediatra e inclui transfusões de sangue durante o primeiro ano de vida para ajudar a controlar a anemia. Ao longo dos anos, a anemia vai sendo menos acentuada e, por isso, as transfusões podem deixar de ser necessárias, não deixando, no entanto, de fazer exames de sangue frequentes. Caso as transfusões não levem a resultados satisfatórios, existe a opção de um transplante de medula que vai corrigir a forma como a medula produz as células do sangue, melhorando a anemia. Já as malformações raramente necessitam de tratamento, pois não prejudicam as atividades diárias. Mas, se isso acontecer, o pediatra pode recomendar cirurgias para tentar reconstruir o local afetado e devolver a função.",
+                "webgraphy":"blabla\nblabla\nblabla"
             }
         ]
     }, 
     {
         "_id": "AT2",
-        "article_type": "Comuns",
+        "article_type": "Virais e Bacterianas",
         "articles": [
             {   
                 "_id":"AT2A1",
@@ -50,7 +53,8 @@
                     { "id": "AT2A1C2", "description": "Cause 2" }
                 ],
                 "diagnostic":"Diagnostic",
-                "tratament":"Tratament"
+                "tratament":"Tratament",
+                "webgraphy":"blabla\nblabla\nblabla"
             },
             { 
                 "_id":"AT2A2",
@@ -65,7 +69,8 @@
                     { "id": "AT2A2C2", "description": "Cause 2" }
                 ],
                 "diagnostic":"Diagnostic",
-                "tratament":"Tratament"
+                "tratament":"Tratament",
+                "webgraphy":"blabla\nblabla\nblabla"
             },
             { 
                 "_id":"AT2A3",
@@ -80,7 +85,8 @@
                     { "id": "AT2A3C2", "description": "Cause 2" }
                 ],
                 "diagnostic":"Diagnostic",
-                "tratament":"Tratament"
+                "tratament":"Tratament",
+                "webgraphy":"blabla\nblabla\nblabla"
             }
         ] 
     }]

@@ -4,11 +4,13 @@ import { Link } from 'react-router';
 import * as messages from '../../constants/ui.labels'
 
 const Header = props => {
+
     return (
         <React.Fragment>
-            <Navbar articlesType={props.articlesType} 
-                    onGetArticlesClick={props.onGetArticlesClick} 
-                    onAboutClick={props.onAboutClick} 
+            <Navbar articlesType={props.articlesType}
+                    onGetArticlesClick={props.onGetArticlesClick}
+                    onAboutClick={props.onAboutClick}
+                    onWebgraphyClick={props.onWebgraphyClick}
                     onSearchSubmit={props.onSearchSubmit}/>
             <header id="masthead" class="site-header" role="banner" style={{ backgroundPosition: 50% 17 }}>
                 <div class="container">

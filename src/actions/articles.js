@@ -75,3 +75,15 @@ export const getAboutError = actionCreator(
   actionTypes.GET_ABOUT_FAILURE,
   error => ({ ...error })
 )
+
+export const getWebgraphy = actionCreator(actionTypes.GET_WEBGRAPHY)
+
+export const getWebgraphySuccess = actionCreator(
+  actionTypes.GET_WEBGRAPHY_SUCCESS,
+  webgraphy => ({ ...webgraphy })
+)
+
+export const getWebgraphyError = actionCreator(
+  actionTypes.GET_WEBGRAPHY_FAILURE,
+  error => ({ ...error })
+)

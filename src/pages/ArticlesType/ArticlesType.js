@@ -9,8 +9,8 @@ import { Button } from 'react-bootstrap'
 class ArticlesType extends React.Component {
 
   render() {
-    const { articlesType, onGetArticlesClick, onAboutClick, onSearchSubmit} = this.props
-    
+    const { articlesType, onGetArticlesClick, onAboutClick, onWebgraphyClick, onSearchSubmit} = this.props
+
     const renderArticlesType = articlesType => {
       return articlesType.map(type => {
         return (
@@ -35,6 +35,7 @@ class ArticlesType extends React.Component {
         <Header articlesType={articlesType} 
                 onGetArticlesClick={onGetArticlesClick} 
                 onAboutClick={onAboutClick}
+                onWebgraphyClick={onWebgraphyClick}
                 onSearchSubmit={onSearchSubmit} 
                 hasReturn={false} />
         <div id="page" class="hfeed site">
@@ -50,7 +51,7 @@ class ArticlesType extends React.Component {
             </div>
           </div>
         </div>
-        <Footer />
+        <Footer onAboutClick={onAboutClick} />
       </React.Fragment>
     )
   }

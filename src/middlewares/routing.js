@@ -1,6 +1,6 @@
 import * as types from '../constants/action.types'
 import { routerActions } from 'react-router-redux'
-import { ARTICLES_LIST, ARTICLE, ABOUT } from '../constants/routes'
+import { ARTICLES_LIST, ARTICLE, ABOUT, WEBGRAPHY } from '../constants/routes'
 
 export default store => next => action => {
   next(action)
@@ -15,8 +15,11 @@ export default store => next => action => {
     case types.GET_ARTICLE:
       store.dispatch(routerActions.push(ARTICLE))
       break
-      case types.GET_ABOUT:
+    case types.GET_ABOUT:
       store.dispatch(routerActions.push(ABOUT))
+      break
+    case types.GET_WEBGRAPHY:
+      store.dispatch(routerActions.push(WEBGRAPHY))
       break
     default:
       break

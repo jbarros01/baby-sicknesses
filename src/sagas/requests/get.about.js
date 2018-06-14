@@ -2,7 +2,7 @@ import { put, takeLatest } from 'redux-saga/effects'
 import { getAboutSuccess, getAboutError } from '../../actions'
 import { GET_ABOUT } from '../../constants/action.types'
 
-function readAbout(articleId) {
+function readAbout() {
   // const data = require('../data/index.json')
   return "TEST"
 }
