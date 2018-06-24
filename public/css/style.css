@@ -43,7 +43,7 @@ Oblique is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic
 }
 
 .background-filter {
-	background-color: rgba(0,0,0,0.3);
+	background-color: rgba(0,0,0,0.1);
     position: absolute;
     height: 100%;
     width: 100%;
@@ -54,7 +54,7 @@ Oblique is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic
 
 body {
 	color: #383A3C;
-	background: url(/img/desenho.jpg) no-repeat center center fixed;
+	background: url(/img/sara-desenho.jpeg) no-repeat center center fixed;
 	-webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -912,9 +912,22 @@ img[class*="wp-image-"] {
 	margin-top: 15px;
 	margin-bottom: 15px;
 }
-div#progeria_lindsay {
+div#aase_diagnostic, div#about_progeria {
 	text-align: center;
 	padding: 20px 0px;
+}
+div#about_progeria img {
+	width: 250px;
+}
+div#about_progeria span:nth-child(2) img {
+	width: 150px;
+}
+div#about_progeria span {
+	padding: 0px 15px;
+}
+div#progeria_symptoms img {
+	width: 200px;
+	height: 200px;
 }
 div.lateral_image {
 	position: relative;
@@ -934,6 +947,9 @@ div.lateral_image img {
 	position: absolute;
 	top: -40px;
 	height: 100px;
+}
+div#progeria_lindsay img {
+	top: 0px;
 }
 div#palatina img {
 	top: -30px;
@@ -2259,6 +2275,9 @@ Responsive
 		padding: 10px 0px;
 	}
 	div.help {
+		display: none;
+	}
+	div#about_progeria span:nth-child(2) {
 		display: none;
 	}
 }
