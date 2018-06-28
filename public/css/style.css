@@ -151,8 +151,13 @@ a {
 .article-post p {
 	text-align: justify;
 }
+
 #articles-web p {
 	white-space: pre-wrap;
+}
+
+#webgraphy p {
+	text-align: left;
 }
 
 /*--------------------------------------------------------------

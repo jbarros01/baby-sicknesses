@@ -8,7 +8,8 @@ import { GET_ARTICLES, GET_ARTICLE_SEARCH } from '../../constants/action.types'
 const data = require('../data/index.json')
 
 function readArticlesFile(typeId) {
-  return data.baby_sicknesses.find(articleType => articleType._id === typeId).articles
+  const sicks = data.baby_sicknesses.find(articleType => articleType._id === typeId).articles
+  return sicks.sort((sick, nextSick) => sick.name.localeCompare(nextSick.name))
 }
 
 function searchArticles(valueToSearch) {
@@ -30,7 +31,7 @@ function searchArticles(valueToSearch) {
     }
   })
   
-  return articlesFound
+  return articlesFound.sort((sick, nextSick) => sick.name.localeCompare(nextSick.name))
 }
 
 export function* getArticles(action) {

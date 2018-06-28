@@ -11,14 +11,24 @@ class Webgraphy extends React.Component {
 
     const renderWebgraphyArticle = articles => {
         return articles.map(article => {
+            const webgraphy = Array.from(article.webgraphy)
+
             return (
                 <React.Fragment>
                     <div class="entry-content">
                         <div id="name">
-                            <p dangerouslySetInnerHTML={ { __html: article.name } }></p>
+                            <b>
+                                <p dangerouslySetInnerHTML={ { __html: article.name } }></p>
+                            </b>
                         </div>
                         <div id="webgraphy">
-                            <p dangerouslySetInnerHTML={ { __html: article.webgraphy } }></p>
+                            {
+                                webgraphy.map(web => 
+                                    <p>
+                                        <a href={web.link}>{web.link}</a> {web.consulted}
+                                    </p>
+                                )
+                            }
                         </div>
                     </div>
                 </React.Fragment>

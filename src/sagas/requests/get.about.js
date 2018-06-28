@@ -3,8 +3,8 @@ import { getAboutSuccess, getAboutError } from '../../actions'
 import { GET_ABOUT } from '../../constants/action.types'
 
 function readAbout() {
-  // const data = require('../data/index.json')
-  return "TEST"
+  const data = require('../data/index.json')
+  return data.about
 }
 
 export function* getAbout() {

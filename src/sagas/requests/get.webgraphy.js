@@ -8,9 +8,11 @@ function readArticlesFile() {
     return articleType.articles
   })
 
-  return articlesByType.reduce(function(prev, curr) {
+  const sicks = articlesByType.reduce(function(prev, curr) {
     return prev.concat(curr);
   })
+
+  return sicks.sort((sick, nextSick) => sick.name.localeCompare(nextSick.name))
 }
 
 export function* getWebgraphy() {
