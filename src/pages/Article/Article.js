@@ -19,9 +19,9 @@ class Article extends React.Component {
                     <div class="post-section" id="description">
                         <p dangerouslySetInnerHTML={ { __html: article.description } }></p>
                     </div>
-                    <div class="post-section" id="manifestations">
-                        <h3>{messages.MANIFESTATIONS}</h3>
-                        <p dangerouslySetInnerHTML={ { __html: article.manifestations } }></p>
+                    <div class="post-section" id="characteristics">
+                        <h3>{messages.CHARACTERISTICS}</h3>
+                        <p dangerouslySetInnerHTML={ { __html: article.characteristics } }></p>
                     </div>
                     <div class="post-section" id="causes">
                         <h3>{messages.CAUSES}</h3>
@@ -35,6 +35,20 @@ class Article extends React.Component {
                         <h3>{messages.TRATAMENT}</h3>
                         <p dangerouslySetInnerHTML={ { __html: article.tratament } }></p>
                     </div>
+                    {
+                        article.incidence &&
+                        <div class="post-section" id="incidence">
+                            <h3>{messages.INCIDENCE}</h3>
+                            <p dangerouslySetInnerHTML={ { __html: article.incidence } }></p>
+                        </div>
+                    }
+                    {
+                        article.curiosities &&
+                        <div class="post-section" id="curiosities">
+                            <h3>{messages.CURIOSITIES}</h3>
+                            <p dangerouslySetInnerHTML={ { __html: article.curiosities } }></p>
+                        </div>
+                    }
                 </div>
             </article>
         )

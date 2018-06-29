@@ -923,9 +923,10 @@ div#aase_diagnostic, div#about_progeria {
 }
 div#about_progeria img {
 	width: 250px;
+	height: 200px;
 }
 div#about_progeria span:nth-child(2) img {
-	width: 150px;
+	/* width: 150px; */
 }
 div#about_progeria span {
 	padding: 0px 30px;
@@ -948,16 +949,21 @@ div.lateral_image span {
     width: 150px;
 }
 div.lateral_image img {
-	width: 120px;
+	width: 150px;
 	position: absolute;
-	top: -40px;
-	height: 100px;
+	top: 50px;
+	height: 140px;
+}
+div#progeria_index img,  div#progeria_fisio img{
+    width: 140px;
+    top: 0px;
+    height: 140px;
 }
 div#progeria_lindsay img {
 	top: 0px;
 }
 div#palatina img {
-	top: -30px;
+	top: 140px;
 }
 
 /*--------------------------------------------------------------
