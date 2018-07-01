@@ -15,7 +15,7 @@ class Webgraphy extends React.Component {
 
             return (
                 <React.Fragment>
-                    <div class="entry-content">
+                    <div class="entry-content web">
                         <div id="name">
                             <b>
                                 <p dangerouslySetInnerHTML={ { __html: article.name } }></p>

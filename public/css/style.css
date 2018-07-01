@@ -338,6 +338,33 @@ Posts nav
 	box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
 	/*background: url(/img/sidebar-background.jpg) 50% 50%;*/
 }
+img {
+	cursor: pointer;
+}
+.why-image {
+	text-align: center;
+}
+.why-image img {
+	width: 350px;
+    padding: 20px;
+}
+#autismo-curiosites span:nth-child(2) img {
+	width: 250px;
+    top: -10px;
+    margin-left: 10px;
+    right: 0px;
+}
+.web {
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+#apert-lateral img {
+	width: 200px;
+    position: absolute;
+    height: 200px;
+	margin-top: -60px;
+	top: unset;
+}
 
 /*--------------------------------------------------------------
 # Accessibility
