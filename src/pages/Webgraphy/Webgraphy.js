@@ -58,7 +58,7 @@ class Webgraphy extends React.Component {
                 hasReturn={true} />
         <div id="page" class="hfeed site">
             <div id="content" class="site-content">
-                <div class="container content-wrapper">
+                <div class="container content-wrapper container-article">
                     <div id="primary" class="content-area">
                         <div id="ob-grid" class="grid-layout grid-article">
                             <main id="main" class="site-main" role="main">

@@ -6,11 +6,13 @@ const Footer = props => {
         <React.Fragment> 
             <footer id="colophon" class="site-footer" role="contentinfo">     
                 <div class="site-info container">
-                    <div class="by">
-                        {messages.RESERVED_TO}
+                    <div class="sponsor">
+                        <img alt="espf" src="img/espf.png" />
+                        <img alt="poch" src="img/poch.png" />
                     </div>
-                    <div class="help" title={messages.ABOUT}>
-                        <i class="material-icons" onClick={props.onAboutClick.bind(null)}>live_help</i>
+                    <div class="by">
+                        <a class="about-link"onClick={props.onAboutClick.bind(null)}>{messages.ABOUT} </a>
+                        <span>{messages.RESERVED_TO}</span>
                     </div>
                 </div>
 	      	</footer>

@@ -43,27 +43,30 @@ Oblique is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic
 }
 
 .background-filter {
-	background-color: rgba(0,0,0,0.3);
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
+	/* background-color: rgba(0,0,0,0.3); */
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
 	bottom: 0;
 	z-index: -1;
 }
 
 body {
 	color: #383A3C;
-	background: url(/img/sara_desenho.jpeg) no-repeat center center fixed;
-	-webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: 100% 100%;
+	/* background: url(/img/sara_desenho.jpeg) no-repeat center center fixed; */
+	/* -webkit-background-size: cover; */
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	/* background-size: 100% 100%; */
 	font-family: "Source Sans Pro", sans-serif;
 	font-size: 15px;
 	line-height: 1.55;
 	word-wrap: break-word;
 	overflow-x: hidden;
+	/* background:  rgba(0,0,0,0.3); */
+	/* height:  100%; */
+	/* position: relative; */
 }
 h1,
 h2,
@@ -92,6 +95,7 @@ a:hover {
 
 .container {
 	width: 100%;
+	max-width: 100%;
 }
 
 .navbar {
@@ -100,7 +104,7 @@ a:hover {
     border: none;
     min-height: 40px;
     border-radius: 0px;
-    box-shadow: 0 8px 8px -8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 15px 0px rgba(0, 0, 0, 0.3);
 }
 
 nav .container {
@@ -112,6 +116,7 @@ nav .container {
 	padding: 30px !important;
 	padding-top: 50px !important;
 	background-color: #fff !important;
+	margin: 0px!important;
 }
 
 div.help {
@@ -406,6 +411,14 @@ img {
 	width: 200px;
     height: 200px;
 }
+#root {
+	background-color: rgba(0, 0, 0, 0.3);
+	position: absolute;
+    width: 100%;
+}
+.about-link {
+	color: #90ccdc!important;
+}
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -607,6 +620,7 @@ img {
 .empty-articles {
 	color: #fff;
 	font-size: 2rem;
+	margin-bottom: 145px;
 }
 
 .empty-articles div {
@@ -1285,11 +1299,11 @@ Structure
 .site-header {
 	position: relative;
 	z-index: 10;
-	margin-bottom: 45px;
+	margin-bottom: 30px;
 	/* background: linear-gradient(rgba(20,20,20, .5), rgba(20,20,20, .5)), url(/img/baby.jpg) no-repeat; */
 	background-position: 0px!important;
 	background-size: cover;
-	margin-top: 90px;
+	margin-top: 70px;
 	height: 150px;
 }
 .site-branding {
@@ -1346,15 +1360,37 @@ Structure
 	/*background-color: #000;*/
 }
 .site-footer {
-	padding: 30px 0;
-	background-color: transparent;
 	font-size: 14px;
 	text-align:  center;
+	background-color: #fff;
+	min-height: 200px;
+	position: relative;
+	box-shadow: 0px -2px 15px 0px rgba(0, 0, 0, 0.3);
 }
 .site-footer,
 .site-footer a {
-	color: #fff;
+	color: rgba(0,0,0,0.3);
 }
+.site-info {
+	position: absolute;
+	top: 50%;
+}
+.sponsor {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	text-align:  left;
+	margin-left: 20px;
+}
+.sponsor img:nth-child(1) {
+	width: 120px;
+    margin-right: 20px;
+    margin-top: -20px;
+}
+.sponsor img {
+	width: 500px;
+}
+.by {text-align:  right;margin-right: 20px;}
 .grid-layout .hentry {
 	width: 320px;
 	margin: 15px;
@@ -2216,6 +2252,20 @@ Responsive
 	}
 }
 @media only screen and (max-width: 991px) {
+	.site-info {
+		top: 35%;
+		position: absolute;
+	}
+	.sponsor, .by {
+		position: relative;
+		text-align: center;
+	}
+	.sponsor {
+		top: 20px;
+	}
+	.by {
+		margin-right: 0px;
+	}
 	.grid-layout .hentry {
 		width: 330px;
 	}
@@ -2262,6 +2312,9 @@ Responsive
 	}
 	.lateral_image span:nth-child(2) {
 		display: none;
+	}
+	.site-footer {
+		min-height: 300px;
 	}
 }
 @media only screen and (max-width: 768px) {
@@ -2358,6 +2411,25 @@ Responsive
 	}
 	div#about_progeria span:nth-child(2) {
 		display: none;
+	}
+}
+@media only screen and (max-width: 690px) {
+	.site-footer {
+		min-height: 400px;
+	}
+	.sponsor {
+		top: 50px;
+	}
+	.site-info {
+		top: 24%;
+		position: absolute;
+	}
+	.by {
+		top: -30px;
+	}
+	.sponsor img:nth-child(1) {
+		margin-top: 20px;
+		margin-bottom: 20px;
 	}
 }
 @media only screen and (max-width: 600px) {
