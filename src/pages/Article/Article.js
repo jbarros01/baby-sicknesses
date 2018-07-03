@@ -27,6 +27,20 @@ class Article extends React.Component {
                         <h3>{messages.CAUSES}</h3>
                         <p dangerouslySetInnerHTML={ { __html: article.causes } }></p>
                     </div>
+                    {
+                        article.complications &&
+                        <div class="post-section" id="complications">
+                            <h3>{messages.COMPLICATIONS}</h3>
+                            <p dangerouslySetInnerHTML={ { __html: article.complications } }></p>
+                        </div>
+                    }
+                    {
+                        article.risks &&
+                        <div class="post-section" id="risks">
+                            <h3>{messages.RISKS}</h3>
+                            <p dangerouslySetInnerHTML={ { __html: article.risks } }></p>
+                        </div>
+                    }
                     <div class="post-section" id="diagnostic">
                         <h3>{messages.DIAGNOSTIC}</h3>
                         <p dangerouslySetInnerHTML={ { __html: article.diagnostic } }></p>
@@ -43,6 +57,13 @@ class Article extends React.Component {
                         </div>
                     }
                     {
+                        article.prognostic &&
+                        <div class="post-section" id="prognostic">
+                            <h3>{messages.PROGNOSTIC}</h3>
+                            <p dangerouslySetInnerHTML={ { __html: article.prognostic } }></p>
+                        </div>
+                    }
+                    {
                         article.curiosities &&
                         <div class="post-section" id="curiosities">
                             <h3>{messages.CURIOSITIES}</h3>
@@ -56,13 +77,13 @@ class Article extends React.Component {
 
     return (
       <React.Fragment>
-        <Header articlesType={articlesType} 
+        <div id="page" class="hfeed site">
+            <Header articlesType={articlesType} 
                 onGetArticlesClick={this.props.onGetArticlesClick} 
                 onAboutClick={this.props.onAboutClick}
                 onWebgraphyClick={this.props.onWebgraphyClick}
                 onSearchSubmit={this.props.onSearchSubmit} 
                 hasReturn={true} />
-        <div id="page" class="hfeed site">
             <div id="content" class="site-content">
                 <div class="container content-wrapper container-article">
                     <div id="primary" class="content-area">

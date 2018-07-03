@@ -343,27 +343,35 @@ Posts nav
 	box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
 	/*background: url(/img/sidebar-background.jpg) 50% 50%;*/
 }
-img {
-	cursor: pointer;
-}
 .why-image {
 	text-align: center;
 }
-.why-image img {
-	width: 350px;
-    padding: 20px;
-}
-#autismo-curiosites span:nth-child(2) img {
+.why-image#prader-willi img {
 	width: 250px;
-    top: -10px;
-    margin-left: 10px;
-    right: 0px;
+}
+.why-image figure {
+	width: 300px;
+	padding: 20px;
+	margin:  0 auto;
+}
+#down-characteristics figure {
+	width: 250px;
+	position: absolute;
+	top: 0px;
+	height: 140px;
+	text-align: center;
+}
+#autismo-curiosites span:nth-child(2) figure {
+	width: 200px;
+	top: -10px;
+	right: 20px;
+	text-align:  center;
 }
 .web {
     border-bottom: 1px solid rgba(0,0,0,0.1);
     margin-bottom: 20px;
 }
-#apert-lateral img {
+#apert-lateral figure {
 	width: 200px;
     position: absolute;
     height: 200px;
@@ -380,22 +388,31 @@ img {
 #moebius_poli span:nth-child(2), 
 #moebius_hernia span:nth-child(2),
 #moebius_pes span:nth-child(2) {
-	width: 200px;
-    position: absolute;
-    top: -40px;
+	width: 250px;
+	position: absolute;
+	top: -40px;
+	text-align:  center;
 }
 #moebius_poli span:nth-child(2) {
-	top: 10px;
+	top: 50px;
 }
 #moebius_hernia span:nth-child(2) {
-	top: 40px;
+	top: 80px;
+}
+#moebius figure, 
+#moebius_poli figure, 
+#moebius_hernia figure,
+#moebius_pes figure {
+	width: 170px;
+	height: 100px;
+	top: 20px;
 }
 #moebius img, 
 #moebius_poli img, 
 #moebius_hernia img,
 #moebius_pes img {
-	width: 140px;
-    height: 100px;
+	height: 100px;
+    width: 200px;
 }
 #prader-willi > img{
     width: 300px;
@@ -407,7 +424,7 @@ img {
     margin-left: 50px;
     width: 200px;
 }
-#willi-baby img {
+#willi-baby figure {
 	width: 200px;
     height: 200px;
 }
@@ -616,6 +633,10 @@ img {
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
+
+#page {
+	min-height: 100vh;
+}
 
 .empty-articles {
 	color: #fff;
@@ -1003,17 +1024,22 @@ div#aase_diagnostic, div#about_progeria {
 	text-align: center;
 	padding: 20px 0px;
 }
-div#about_progeria img {
+div#about_progeria span:first-child {
+	position: relative;
+	top: -30px;
+}
+div#about_progeria figure {
 	width: 250px;
 	height: 200px;
+	display:  inline-block;
 }
-div#about_progeria span:nth-child(2) img {
+div#about_progeria span:nth-child(2) figure {
 	/* width: 150px; */
 }
 div#about_progeria span {
 	padding: 0px 30px;
 }
-div#progeria_symptoms img {
+div#progeria_symptoms figure {
 	width: 200px;
 	height: 200px;
 }
@@ -1028,23 +1054,27 @@ div.lateral_image span:nth-child(2) {
 }
 div.lateral_image span {
 	display: inline-block;
-    width: 150px;
+	width: 150px;
 }
-div.lateral_image img {
+div.lateral_image figure {
 	width: 150px;
 	position: absolute;
 	top: 50px;
 	height: 140px;
+	text-align:  center;
 }
-div#progeria_index img,  div#progeria_fisio img{
+div#progeria_index img, div#progeria_fisio img {
     width: 140px;
     top: 0px;
     height: 140px;
 }
-div#progeria_lindsay img {
+div#progeria_index figure, div#progeria_fisio figure {
+	top: -20px;
+}
+div#progeria_lindsay figure {
 	top: 0px;
 }
-div#palatina img {
+div#palatina figure {
 	top: 140px;
 }
 
@@ -1299,12 +1329,11 @@ Structure
 .site-header {
 	position: relative;
 	z-index: 10;
-	margin-bottom: 30px;
 	/* background: linear-gradient(rgba(20,20,20, .5), rgba(20,20,20, .5)), url(/img/baby.jpg) no-repeat; */
 	background-position: 0px!important;
 	background-size: cover;
-	margin-top: 70px;
-	height: 150px;
+	margin-top: 50px;
+	height: 250px;
 }
 .site-branding {
 	text-align: center;
@@ -2275,9 +2304,6 @@ Responsive
 	.hentry .post-svg {
 		margin-left: -3px;
 	}
-	.site-header {
-		height: 100px;
-	}
 	.site-title {
 		font-size: 60px !important;
 	}
@@ -2318,6 +2344,16 @@ Responsive
 	}
 }
 @media only screen and (max-width: 768px) {
+	.site-header {
+		height: 150px;
+		margin-bottom: 10px;
+	}
+	div#about_progeria span:first-child {
+		top: 20px;
+	}
+	.why-image figure {
+		width: 250px;
+	}
 	.woocommerce ul.products li.product:nth-of-type(4n+1),
 	.woocommerce ul.products li.product:nth-of-type(4n+2),
 	.woocommerce ul.products li.product:nth-of-type(4n+3),
@@ -2400,7 +2436,7 @@ Responsive
 	div.lateral_image span:nth-child(2) {
 		text-align: center;
 	}
-	div.lateral_image img {
+	div.lateral_image figure {
 		width: 150px;
 		position: relative;
 		top: 0px!important;

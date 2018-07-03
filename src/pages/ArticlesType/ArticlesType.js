@@ -32,13 +32,13 @@ class ArticlesType extends React.Component {
 
     return (
       <React.Fragment>
-        <Header articlesType={articlesType} 
+        <div id="page" class="hfeed site">
+          <Header articlesType={articlesType} 
                 onGetArticlesClick={onGetArticlesClick} 
                 onAboutClick={onAboutClick}
                 onWebgraphyClick={onWebgraphyClick}
                 onSearchSubmit={onSearchSubmit} 
                 hasReturn={false} />
-        <div id="page" class="hfeed site">
           <div id="content" class="site-content">
             <div class="container content-wrapper">
               <div id="primary" class="content-area">

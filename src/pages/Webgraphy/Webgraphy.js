@@ -49,14 +49,14 @@ class Webgraphy extends React.Component {
 
     return (
       <React.Fragment>
-        <Header articlesType={articlesType}
+        <div id="page" class="hfeed site">
+            <Header articlesType={articlesType}
                 articles={articles}
                 onGetArticlesClick={this.props.onGetArticlesClick}
                 onAboutClick={this.props.onAboutClick}
                 onWebgraphyClick={this.props.onWebgraphyClick}
                 onSearchSubmit={this.props.onSearchSubmit}
                 hasReturn={true} />
-        <div id="page" class="hfeed site">
             <div id="content" class="site-content">
                 <div class="container content-wrapper container-article">
                     <div id="primary" class="content-area">
