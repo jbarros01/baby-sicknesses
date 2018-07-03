@@ -161,8 +161,12 @@ a {
 	white-space: pre-wrap;
 }
 
-#webgraphy p {
+#webgraphy p, #images_webgraphy p {
 	text-align: left;
+}
+
+#by-sara {
+	color: rgba(0, 0, 0, 0.3);
 }
 
 /*--------------------------------------------------------------

@@ -12,6 +12,9 @@ class Webgraphy extends React.Component {
     const renderWebgraphyArticle = articles => {
         return articles.map(article => {
             const webgraphy = Array.from(article.webgraphy)
+            if(article.images_webgraphy) {
+                this.images_webgraphy = Array.from(article.images_webgraphy)
+            }
 
             return (
                 <React.Fragment>
@@ -30,6 +33,24 @@ class Webgraphy extends React.Component {
                                 )
                             }
                         </div>
+                        {
+                            this.images_webgraphy  &&
+                            <div id="images_webgraphy">
+                                <p>{messages.IMAGES}</p>
+                                {
+                                    this.images_webgraphy.map(images_web =>
+                                        <React.Fragment>
+                                            <p>
+                                                {images_web.description}
+                                            </p>
+                                            <p>
+                                                <a href={images_web.link}>{images_web.link}</a> {images_web.consulted}
+                                            </p>
+                                        </React.Fragment>
+                                    )
+                                }
+                            </div>
+                        }
                     </div>
                 </React.Fragment>
             )
@@ -43,6 +64,7 @@ class Webgraphy extends React.Component {
                     <h2 class="entry-title">{messages.WEBGRAPHY}</h2>
                 </header> 
                 {renderWebgraphyArticle(articles)}
+                <p id='by-sara' >{messages.BY_SARA}</p>
             </article>
         )
     }
