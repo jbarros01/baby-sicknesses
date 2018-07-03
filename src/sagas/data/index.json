@@ -32,7 +32,7 @@
                 "_id":"AT1A2",
                 "name":"Progeria", 
                 "description":"    A Progeria, também conhecida como síndrome de Hutchinson-Gilford, é uma desordem genética progressiva e extremamente rara que afeta 1 em cada 4 milhões de crianças. A doença caracteriza-se pelo envelhecimento rápido (cerca de 7 vezes mais do que a taxa normal) da criança. A progeria trata-se de uma doença genética, agressivamente progressiva e sem cura.\n    Estas crianças não se desenvolvem fisicamente, nem chegam à maturação sexual necessária para a reprodução, sendo que a sua esperança de vida é de 14 anos para as raparigas e 16 anos para os rapazes.<div id='about_progeria'><span><figure><img src='img/progeria_lindsay.jpeg' /><figcaption>Fig.1 - Progeria</figcaption></figure></span><span><figure><img src='img/progeria_symptoms.jpeg' /><figcaption>Fig.2 - Progeria nas diferentes idades</figcaption></figure></span></div>",
-                "characteristics":"    A primeira e principal característica da Progeria é que a doença causa uma diminuição muito acentuada na taxa de crescimento do bebé durante o primeiro ano de vida. No entanto, a criança continua a desenvolver-se intelectualmente, adquirindo novas capacidades. As principais alterações na aparência vão surgindo a partir do segundo ano de idade e incluem:\n    Rosto fino com queixo pequeno;\n<div class=\"lateral_image\" id=\"progeria_index\"><span>    • Cabeça muito maior do que o rosto;</span><span><figure><img src='img/progeria_index.jpeg' /><figcaption>Fig.3 - Progeria nas diferentes idades</figcaption></figure></span></div>\n    • Baixa estatura;\n    • Perda de cabelo, incluindo as pestanas e sobrancelhas;\n    • Atraso acentuado na queda e crescimento de novos dentes;\n    • Pele fina e com veias visíveis;\n    • Olhos salientes e com dificuldade para fechar as pálpebras;\n<div class=\"lateral_image\" id=\"progeria_fisio\"><span>    • Envelhecimento prematuro;</span><span><figure><img src='img/progeria_fisio.jpeg' /><figcaption>Fig.4 - Características físicas</figcaption></figure></span></div>\n    • Micrognatia (mandibula inferior menor do que o normal);\n    • Artrose (inflamação das articulações);\n    • Presença de cabelos brancos na infância;\n    • Ossos frágeis que sofrem fraturas constantes;\n    • Problemas cardiovasculares, como hipertensão e insuficiência cardíaca.",
+                "characteristics":"    A primeira e principal característica da Progeria é que a doença causa uma diminuição muito acentuada na taxa de crescimento do bebé durante o primeiro ano de vida. No entanto, a criança continua a desenvolver-se intelectualmente, adquirindo novas capacidades. As principais alterações na aparência vão surgindo a partir do segundo ano de idade e incluem:\n    • Rosto fino com queixo pequeno;\n<div class=\"lateral_image\" id=\"progeria_index\"><span>    • Cabeça muito maior do que o rosto;</span><span><figure><img src='img/progeria_index.jpeg' /><figcaption>Fig.3 - Progeria nas diferentes idades</figcaption></figure></span></div>\n    • Baixa estatura;\n    • Perda de cabelo, incluindo as pestanas e sobrancelhas;\n    • Atraso acentuado na queda e crescimento de novos dentes;\n    • Pele fina e com veias visíveis;\n    • Olhos salientes e com dificuldade para fechar as pálpebras;\n<div class=\"lateral_image\" id=\"progeria_fisio\"><span>    • Envelhecimento prematuro;</span><span><figure><img src='img/progeria_fisio.jpeg' /><figcaption>Fig.4 - Características físicas</figcaption></figure></span></div>\n    • Micrognatia (mandibula inferior menor do que o normal);\n    • Artrose (inflamação das articulações);\n    • Presença de cabelos brancos na infância;\n    • Ossos frágeis que sofrem fraturas constantes;\n    • Problemas cardiovasculares, como hipertensão e insuficiência cardíaca.",
                 "causes":"    A doença é causada pela alteração num gene, conhecido como Lâmina A. Este gene é responsável por produzir uma proteína importante que mantém o núcleo das células estável. Assim, quando a mutação acontece, as células deixam de funcionar de forma normal, impedindo a regeneração dos tecidos e provocando a morte prematura das células.",
                 "diagnostic":"    O diagnóstico da progéria é fundamentalmente clínico e realizado em crianças que apresentam sinais iniciais da doença, entre o primeiro e o segundo ano de vida. No entanto, após ter sido identificado o gene mutado, através da análise ao sangue da criança é agora possível detetar a presença deste mesmo.",
                 "tratament":"    Não existe uma forma de tratamento específica para esta doença e, por isso, o médico sugere alguns tratamentos de acordo com os problemas que vão surgindo. Entre as formas de tratamento mais utilizadas estão:\n    Uso diário de aspirina: permite manter o sangue mais fino, evitando a formação de coágulos que podem provocar infartos ou AVC;\n    • Sessões de fisioterapia: ajudam a aliviar a inflamação das articulações e fortalecer os músculos, evitando fraturas fáceis;\n    • Cirurgias: são utilizadas para tratar ou evitar problemas graves, especialmente no coração.\n    Além disto, o médico também pode receitar outros remédios, como Estatinas para reduzir o colesterol, ou hormonas de crescimento, caso a criança esteja muito abaixo do peso, por exemplo. Novas formas de tratamento estão a ser testadas para tentar atrasar o envelhecimento das células e desta forma, atenuar o desenvolvimento da doença e prolongar a vida.",
@@ -242,7 +242,7 @@
             {
                 "_id":"AT2A1",
                 "name":"Rubéola", 
-                "description":"    Description",
+                "description":"    Rubéola, também conhecida como sarampo alemão, é uma doença contagiosa causada por um vírus, transmitido por via respiratória e caracterizada por erupções vermelhas na pele.\n    A doença normalmente ocorre na infância, entre os cinco e nove anos, mas pode acometer adultos não vacinados ou que nunca tiveram rubéola. Se adquirida na gravidez, pode gerar deformações no feto e até aborto.\n    A virose surge apenas uma vez na vida.",
                 "characteristics": [
                     { "id": "AT2A1M1", "description": "Manifestation 1" },
                     { "id": "AT2A1M2", "description": "Manifestation 2" }
@@ -295,7 +295,7 @@
             { 
                 "_id":"AT2A2",
                 "name":"Amigdalite", 
-                "description":"    Description",
+                "description":"    Amigdalite é uma inflamação das amígdalas. As amígdalas são gânglios linfáticos presentes no fundo da garganta que têm como função proteger o organismo de vírus e bactérias. No entanto, são um dos primeiros órgãos a entrar em contacto com agentes patogénicos, ficando infetados com frequência. Na tentativa de combatê-los, o corpo aciona um processo inflamatório. As amígdalas incham e, nos quadros causados por uma infeção bacteriana, podem ficar até com pus.\n    A amigdalite pode ser dividida em 4 tipos distintos:\n    • Amigdalite bacteriana: quando é causada por bactérias;\n    • Amigdalite viral: quando é causada por vírus;\n    • Amigdalite aguda: tem duração de até 3 meses, sendo uma das infeções das vias aéreas de maior frequência;\n    • Amigdalite crónica: quando a infeção dura mais de 3 meses ou é recorrente.",
                 "characteristics": [
                     { "id": "AT2A2M1", "description": "Manifestation 1" },
                     { "id": "AT2A2M2", "description": "Manifestation 2" }
@@ -340,7 +340,7 @@
             { 
                 "_id":"AT2A3",
                 "name":"Bronquiolite", 
-                "description":"    Description",
+                "description":"    A bronquiolite é uma infeção viral das vias aéreas, sendo o agente mais frequente o Vírus Sincicial Respiratório (VSR). Durante a infeção, as pequenas vias que transportam o ar até aos pulmões ficam obstruídas, o que dificulta a entrada e saída de ar e, consequentemente, a oxigenação do sangue.\n    Esta doença é muito frequente dos bebés nos primeiros dois anos de vida. É muito comum nos meses de inverno, sendo uma das causas da constipação simples. Geralmente, a criança melhora num período de uma a duas semanas.",
                 "characteristics": [
                     { "id": "AT2A3M1", "description": "Manifestation 1" },
                     { "id": "AT2A3M2", "description": "Manifestation 2" }
@@ -397,7 +397,7 @@
             {
                 "_id":"AT2A4",
                 "name":"Gastroenterite", 
-                "description":"    Description",
+                "description":"    A gastroenterite caracteriza-se por uma infeção e inflamação no tubo digestivo que afeta o estômago e o intestino delgado.\n    É uma doença contagiosa e no frio os riscos de contágio são maiores, podendo causar epidemias. Embora por vezes seja denominada &quot;gripe intestinal&quot;, a doença não tem relação com a gripe.\n    É um problema bastante comum na infância e em crianças pequenas.",
                 "characteristics": [
                     { "id": "AT2A4M1", "description": "Manifestation 1" },
                     { "id": "AT2A4M2", "description": "Manifestation 2" }
@@ -434,7 +434,7 @@
             {
                 "_id":"AT2A5",
                 "name":"Meningite", 
-                "description":"    Description",
+                "description":"    A meningite é uma doença causada pela inflamação das meninges, que são as membranas que protegem o cérebro e a medula espinal. Essa inflamação é habitualmente o resultado de uma infeção do líquido que se encontra em torno do cérebro e da medula espinal.\n    A meningite pode ser classificada como aguda, subaguda, crônica ou recorrente. Ela também pode ser classificada de acordo com sua causa: bactérias, vírus, fungos, protozoários, ou, ocasionalmente, condições não infeciosas.\n    Trata-se de uma doença súbita, potencialmente fatal.",
                 "characteristics": [
                     { "id": "AT2A5M1", "description": "Manifestation 1" },
                     { "id": "AT2A5M2", "description": "Manifestation 2" }
@@ -475,7 +475,7 @@
             {
                 "_id":"AT2A6",
                 "name":"Sarampo", 
-                "description":"    Description",
+                "description":"    O Sarampo é uma infeção altamente contagiosa, transmitida por um vírus da família Morbillivirus.\n    A infeção pode ser classificada ainda como:\n    • Sarampo complicado por encefalite;\n    • Sarampo complicado por meningite;\n    • Sarampo complicado por pneumonia;\n    • Sarampo complicado por otite média;\n    • Sarampo com complicações intestinais;\n    • Sarampo com outras complicações;\n    • Sarampo sem complicação.\n    A doença pode infetar igualmente adultos ou crianças, mas tem maior prevalência na fase infantil.",
                 "characteristics": [
                     { "id": "AT2A6M1", "description": "Manifestation 1" },
                     { "id": "AT2A6M2", "description": "Manifestation 2" }
@@ -508,7 +508,7 @@
             {
                 "_id":"AT2A7",
                 "name":"Varicela", 
-                "description":"    Description",
+                "description":"    Trata-se de uma doença infetocontagiosa, provocada pelo vírus varicela-zoster. Normalmente pouco grave, afeta centenas de crianças por ano, em Portugal. A varicela ocorre predominantemente na infância, em geral entre os 2 e os 8 anos, e raramente se manifesta em recém-nascidos.",
                 "characteristics": [
                     { "id": "AT2A7M1", "description": "Manifestation 1" },
                     { "id": "AT2A7M2", "description": "Manifestation 2" }
