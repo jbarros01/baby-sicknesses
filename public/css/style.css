@@ -1064,9 +1064,12 @@ div.lateral_image figure {
 	text-align:  center;
 }
 div#progeria_index img, div#progeria_fisio img {
-    width: 140px;
+    width: 130px;
     top: 0px;
-    height: 140px;
+    height: 120px;
+}
+div#progeria_fisio img {
+	margin-top: 20px;
 }
 div#progeria_index figure, div#progeria_fisio figure {
 	top: -20px;
