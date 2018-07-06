@@ -23,10 +23,6 @@ class Article extends React.Component {
                         <h3>{messages.CHARACTERISTICS}</h3>
                         <p dangerouslySetInnerHTML={ { __html: article.characteristics } }></p>
                     </div>
-                    <div class="post-section" id="causes">
-                        <h3>{messages.CAUSES}</h3>
-                        <p dangerouslySetInnerHTML={ { __html: article.causes } }></p>
-                    </div>
                     {
                         article.complications &&
                         <div class="post-section" id="complications">
@@ -34,11 +30,29 @@ class Article extends React.Component {
                             <p dangerouslySetInnerHTML={ { __html: article.complications } }></p>
                         </div>
                     }
+                    <div class="post-section" id="causes">
+                        <h3>{messages.CAUSES}</h3>
+                        <p dangerouslySetInnerHTML={ { __html: article.causes } }></p>
+                    </div>
+                    {
+                        article.transmission &&
+                        <div class="post-section" id="transmission">
+                            <h3>{messages.TRANSMISSION}</h3>
+                            <p dangerouslySetInnerHTML={ { __html: article.transmission } }></p>
+                        </div>
+                    }
                     {
                         article.risks &&
                         <div class="post-section" id="risks">
                             <h3>{messages.RISKS}</h3>
                             <p dangerouslySetInnerHTML={ { __html: article.risks } }></p>
+                        </div>
+                    }
+                    {
+                        article.prevention &&
+                        <div class="post-section" id="prevention">
+                            <h3>{messages.PREVENTION}</h3>
+                            <p dangerouslySetInnerHTML={ { __html: article.prevention } }></p>
                         </div>
                     }
                     <div class="post-section" id="diagnostic">

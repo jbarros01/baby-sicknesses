@@ -154,7 +154,7 @@ a {
 }
 
 .article-post p {
-	text-align: justify;
+	/* text-align: justify; */
 }
 
 #articles-web p {
