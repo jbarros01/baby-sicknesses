@@ -22,7 +22,12 @@ class ArticlesList extends React.Component {
                     </h2>
                 </header>
                 <div class="entry-content">
-                  <p>{article.description}</p>
+                  {
+                    article.name === 'Varicela' ? (
+                    <p dangerouslySetInnerHTML={ { __html: article.description } }></p>
+                    ) : (
+                    <p>{article.description}</p>
+                  )}
                 </div>
             </div>
             <Button id="read-more-btn" onClick={this.props.onGetArticleClick.bind(null, article._id)}>

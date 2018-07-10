@@ -432,6 +432,36 @@ Posts nav
 	width: 200px;
     height: 200px;
 }
+#gastro_sintomas span:nth-child(2) {
+	position: absolute;
+    top: -55px;
+}
+#gastro_sintomas figure {
+	width: 200px;
+}
+#rubeola_sintomas span:nth-child(2) {
+	top: -25px;
+    position: absolute;
+}
+#rubeola img {
+	width: 200px;
+}
+#rubeola_sintomas img {
+	width: 110px;
+}
+#sarampo span:nth-child(2) {
+	position: absolute;
+	top: -40px;
+}
+#sarampo figure {
+	width: 200px;
+}
+#sarampo_sintomas figura {
+	width: 180px;
+}
+#varicela_fases figure {
+	width: 600px;
+}
 #root {
 	background-color: rgba(0, 0, 0, 0.3);
 	position: absolute;
@@ -2351,6 +2381,9 @@ Responsive
 	}
 }
 @media only screen and (max-width: 768px) {
+	#varicela_fases {
+		display: none;
+	}
 	.site-header {
 		height: 150px;
 		margin-bottom: 10px;
